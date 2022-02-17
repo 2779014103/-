@@ -1,0 +1,4928 @@
+下列命令中，可以将文档注释提取出来生成帮助文档的是（ ）
+
+A、javac
+
+B、java
+
+C、javadoc
+
+D、jar
+
+请阅读下面的代码：
+
+class Example{
+
+int x;
+
+static int y;
+
+void fac(){
+
+int age=30;
+
+System.out.println("我的年龄是"+age);
+
+}
+
+}
+
+关于上述代码的描述，错误的是（   ）
+
+A、x和y 都是成员变量
+
+B、fac是成员方法
+
+C、age是局部变量
+
+D、以上都不对
+
+请阅读下面的程序
+
+public class Test {
+
+public static void main(String[] args) {
+
+for(int x =0;x<5;x++){
+
+if(x%2==0)
+
+break;
+
+System.out.println(x);
+
+}
+
+}
+
+}
+
+运行结果正确的是（）
+
+A、12345
+
+B、024
+
+C、13
+
+D、不输出任何内容
+
+请阅读下面的程序，程序的运行结果是（）。
+
+class Person {
+
+String name;
+
+int age;
+
+public Person() {}
+
+public Person(String n, int a) {
+
+name = n;
+
+age = a;
+
+}
+
+public void show() {
+
+System.out.print(name + "---" + age +" ");
+
+}
+
+}
+
+public class Test {
+
+public static void main(String[] args) {
+
+Person p1 = new Person();
+
+p1.show();
+
+Person p2 = new Person("周星驰", 27);
+
+p2.show();
+
+}
+
+}
+
+A、null---0周星驰---27
+
+B、null---27周星驰---27
+
+C、周星驰---0null---27
+
+D、周星驰---27null---27
+
+请阅读下面的程序：
+
+public class Test {
+
+public static void main(String[] args) {
+
+int a = 0;
+
+int b = 0;
+
+for (int i = 1; i <= 5; i++) {
+
+a = i % 2;
+
+while (a-- >= 0) {
+
+b++;
+
+}
+
+}
+
+System.out.println(“a=” + a + “,b=” + b);
+
+}
+
+}
+
+下列选项中，哪一个是正确的运行结果（ ）
+
+A、a=2,b=-8
+
+B、a=-2,b=8
+
+C、a=-2,b=-8
+
+D、a=2,b=8
+
+下列File类的构造方法格式错误的是（ ）
+
+A、File(Stringparent
+
+B、Filechild)
+
+C、File(Stringparent
+
+D、Stringchild)
+
+请阅读下面的程序
+
+public class Test {
+
+public static void main(String args) {
+
+int sum = 0;
+
+for (int i = 1; i <= 100; i++) {
+
+if (i % 2 == 0) {
+
+continue;
+
+}
+
+sum += i;
+
+}
+
+System.out.println(“sum = “ + sum);
+
+}
+
+}
+
+下列选项中，哪一个是程序的运行结果。（ ）
+
+A、1050
+
+B、2050
+
+C、2500
+
+D、以上答案都不对
+
+wait()方法作用是（ ）
+
+A、唤醒线程
+
+B、导致线程等待
+
+C、线程休眠
+
+D、结束线程
+
+阅读下列的程序
+
+public class Example {
+
+public static void main(String[] args) {
+
+new Father () {
+
+public void show() {
+
+System.out.println("helloworld");
+
+}
+
+}.show();
+
+}
+
+}
+
+class Father {
+
+public void show() {
+
+System.out.println("hellofather");
+
+}
+
+}
+
+下列选项中，程序的运行结果是（ ）
+
+A、hellofather
+
+B、helloworld
+
+C、编译报错
+
+D、编译通过，运行报错
+
+10．	下面选项中，用于创建Statement对象的方法是（ ）(单选)
+
+A、getMetaData()
+
+B、getConnection(Stringurl
+
+C、Stringuser
+
+D、Stringpwd)
+
+11．	阅读下面的代码，输出结果是（）
+
+public static void main(String[] args) {
+
+Random random1 = new Random(10);
+
+Random random2 = new Random(10);
+
+for(int i=0;i<5;i++){
+
+System.out.print(random1.nextInt(5));
+
+}
+
+System.out.println();
+
+for(int i=0;i<5;i++){
+
+System.out.print(random2.nextInt(5));
+
+}
+
+}
+
+A、3030130301
+
+B、5048132680
+
+C、3268023579
+
+D、1111111111
+
+12．	Java多线程中，关于解决死锁的方法说法错误的是（ ）
+
+A、避免存在一个进程等待序列{P1，P2，…，Pn}，其中P1等待P2所占有的某一资源，P2等待P3所占有的某一源，…...，而Pn等待P1所占有的的某一资源，可以避免死锁
+
+B、打破互斥条件，即允许进程同时访问某些资源，可以预防死锁，但是，有的资源是不允许被同时访问的，所以这种办法并无实用价值
+
+C、打破不可抢占条件。即允许进程强行从占有者那里夺取某些资源。
+
+D、使用打破循环等待条件（避免第一个线程等待其它线程，后者又在等待第一个线程）的方法不能避免线程死锁
+
+13．	下列关于case关键字的说法中，错误的是（ ）
+
+A、case关键字后面必须是常量
+
+B、case关键字后面的break必须存在
+
+C、case关键字后面的break可以没有
+
+D、case关键字后面的值必须不一样
+
+14．	CompletableFuture对象创建的方法说明，错误的是（）
+
+A、runAsync(Runnable runnable)以Runnable函数式接口类型为参数，并使用ForkJoinPool.commonPool()作为它的线程池执行异步代码获取CompletableFuture计算结果为空的对象
+
+B、runAsync(Runnable runnable,Executor executor)以Runnable函数式接口类型为参数，并传入指定的线程池执行器executor来获取CompletableFuture计算结果为空的对象
+
+C、supplyAsync(Supplier<U> supplier)并使用指定作为它的线程池执行异步代码获取CompletableFuture计算结果非空的对象
+
+D、supplyAsync(Supplier<U> supplier, Executor executor)以Supplier函数式接口类型为参数，并传入指定的线程池执行器executor来获取CompletableFuture计算结果非空的对象
+
+15．	下列数据类型进行运算时，哪一个会发生自动类型提升（ ）
+
+A、int+int
+
+B、long+long
+
+C、byte+byte
+
+D、double+double
+
+16．	下列关于静态内部类的说法，错误的是（）
+
+A、静态内部类，就是使用static关键字修饰的成员内部类
+
+B、静态内部类只能访问外部类的静态成员
+
+C、创建静态内部类的对象时,必须要先创建外部类的对象
+
+D、静态内部类不能直接访问外部类的非静态成员
+
+17．	下列关于数组最值的描述中，错误的是（ ）
+
+A、要想求数组的最值必须先定义一个数组
+
+B、在求数组最值时，初始时一定要将数组中的第一个元素的值赋给变量
+
+C、求数组最值过程中，一定要对数组进行遍历
+
+D、在求数组最大值时，使用变量记住每次比较后较大的那个值
+
+18．	阅读下列的程序
+
+class Person{
+
+static{
+
+System.out.println(name);
+
+}
+
+private static String name = "hello";
+
+}
+
+class Demo{
+
+public static void main(String[] args){
+
+Person p = null;
+
+}
+
+}
+
+下列选项中，程序的运行结果是（）
+
+A、无结果输出
+
+B、输出null
+
+C、输出hello
+
+D、编译失败
+
+19．	下列Java命令中，哪一个可以编译HelloWorld.java文件（ ）
+
+A、javaHelloWorld
+
+B、javaHelloWorld.java
+
+C、javacHelloWorld
+
+D、javacHelloWorld.java
+
+20．	8>>2的计算结果为（）。
+
+A、4
+
+B、3
+
+C、2
+
+D、1
+
+21．	阅读下列代码
+
+import java.io.*;
+
+public class Example {
+
+public static void main(String[] args)throws Exception {
+
+File file = new File("itcast.txt");
+
+FileInputStream in = new FileInputStream(file);
+
+byte[] buff = new byte[1024]; // 定义一个字节数组，作为缓冲区
+
+int len;
+
+while ((len = in.________) != -1) { // 判断是否读到文件末尾
+
+System.out.println(new String(buff,0,len));
+
+}
+
+in.close();
+
+}
+
+}
+
+请说出下划线上，填写的方法名称( )
+
+A、read(buff)
+
+B、read()
+
+C、write(buff)
+
+D、write()
+
+22．	下列关于Thread类的说法中，错误的是（ ）
+
+A、继承Thread类创建线程的方式可以防止出现多父类问题
+
+B、Thread类属于java.util包
+
+C、继承Thread的方式定义线程后，覆写的run()方法会在该线程的start()方法被调用后被JVM自动运行
+
+D、继承Thread的方式定义线程后，你不能在继承其他的类了，导致程序的可扩展性大大降低
+
+23．	下列选项中关于二维数组的定义，错误的是（ ）
+
+A、int[][]arr=new int[][2];
+
+B、int[][]arr=new int[1][2];
+
+C、int[][]arr=new int[2][];
+
+D、int[][]arr={{1},{2,3},{4,5,6}};
+
+24．	阅读下段代码
+
+import java.io.*;
+
+public class Example{
+
+public static void main(String[] args) throws Exception {
+
+FileInputStream fis = new FileInputStream("file.txt");
+
+FileOutputStream fos = new FileOutputStream("copy_file.txt");
+
+int ch = 0;
+
+while((ch =fis.read())!=-1){
+
+fos.write(ch);
+
+}
+
+fos._______;
+
+fis.close();
+
+}
+
+}
+
+请说出下划线上，填写的方法名称( )
+
+A、read()
+
+B、available()
+
+C、close()
+
+D、write()
+
+25．	在JDK安装目录下，用于存放可执行程序的文件夹是（ ）
+
+A、bin
+
+B、jre
+
+C、lib
+
+D、db
+
+26．	请阅读下面的程序
+
+public class Example02 {
+
+public static void main(String args) {
+
+int x = 0; // 定义变量x，初始值为0
+
+int y = 0; // 定义变量y，初始值为0
+
+boolean b = x==0 || y++<0;
+
+System.out.println("b = "+b+", y = "+y);
+
+}
+
+}
+
+程序的运行结果是（）
+
+A、b = false, y = 0
+
+B、b = false, y = 1
+
+C、b = true, y = 0
+
+D、b = true, y = 1
+
+27．	notify()方法作用是（ ）
+
+A、唤醒线程
+
+B、导致线程等待
+
+C、线程休眠
+
+D、结束线程
+
+28．	以下关于与NIO相关的包介绍，错误的是（）
+
+A、java.nio：主要包含各种与Buffer相关的类
+
+B、java.nio.channels：主要包含与Channel相关的类
+
+C、java.nio.charset：主要包含与字符集相关的类
+
+D、java.nio.charset.spi：主要包含与字符集相关的服务提供者编程接口
+
+29．	请阅读下面的程序
+
+public class Test {
+
+public static void main(String[] args) {
+
+int a = { 2, 0, 4, 1, 8, 3, 5 };
+
+int temp;
+
+for (int i = 0; i < a.length - 1; i++) {
+
+for (int j = a.length - 1; j > i; j--) {
+
+if (aj < aj - 1) {
+
+temp = aj;
+
+aj = aj - 1;
+
+aj - 1 = temp;
+
+}
+
+}
+
+}
+
+for (Integer i : a) {
+
+System.out.print(i);
+
+}
+
+}
+
+}
+
+下列选项中，哪个是程序的运行结果（）
+
+A、8543210
+
+B、0123458
+
+C、2041835
+
+D、以上答案都不对
+
+30．	以下选项中，哪一个是File类delete()方法返回值的类型（）
+
+A、boolean
+
+B、int
+
+C、void
+
+D、Integer
+
+31．	下面浮点型数据的定义中，错误的是（ ）
+
+A、float a=1.23;
+
+B、double b=1.23;
+
+C、double c=1.5E4;
+
+D、float d='a';
+
+32．	请阅读下面的程序
+
+public class Test {
+
+public static void main(String args) {
+
+int i = 0;
+
+int count = 0;
+
+do {
+
+if (!(i + "").contains("4")) {
+
+count++;
+
+}
+
+i++;
+
+} while (i < 500); System.out.println("一共有：" + count);
+
+}
+
+}
+
+下列选项中，哪一个是程序运行后count的值（ ）
+
+A、322
+
+B、323
+
+C、324
+
+D、325
+
+33．	下列选项中，属于浮点数常量的是（ ）
+
+A、198
+
+B、2e3f
+
+C、true
+
+D、null
+
+34．	以下有关Buffer常用方法，描述错误的是（）
+
+A、Buffer clear()：清除缓冲区，将position设置为0，limit设置为capacity
+
+B、Buffer flip()：反转缓冲区，先将limit设置为当前position位置，然后再将position设置为0
+
+C、Buffer mark()：获取Buffer的标记（mark），
+
+D、Buffer rewind()：倒带缓冲区，将position设置为0，并取消设置的标记
+
+35．	请阅读下面的程序
+
+public class Test {
+
+public static void main(String args) {
+
+int sum = 0;
+
+for (int i = 1; i <= 100; i++) {
+
+if (i % 2 == 0) {
+
+continue;
+
+}
+
+sum += i;
+
+}
+
+System.out.println("sum = " + sum);
+
+}
+
+}
+
+程序的运行结果是（）
+
+A、1050
+
+B、2050
+
+C、2500
+
+D、以上答案都不对
+
+36．	下列关于构造方法定义的描述中，错误的是（ ）
+
+A、方法名与类名相同
+
+B、在方法名的前面没有返回值类型的声明
+
+C、当定义了有参构造方法，系统默认的无参构造方法依然存在
+
+D、在方法中不能使用return语句返回一个值
+
+37．	阅读下列代码片段：
+
+public class Example{
+
+public static void main(String[] args) {
+
+{
+
+int a = 1;
+
+System.out.print(a);
+
+}
+
+{
+
+int a = 2;
+
+System.out.print(a);
+
+}
+
+int a = 3;
+
+System.out.print(a);
+
+}
+
+}
+
+下列选项中，哪一个是程序正确的运行结果（）
+
+A、123
+
+B、111
+
+C、121
+
+D、编译不通过
+
+38．	“隐藏对象的属性和实现细节，仅对外提供公有的方法”描述的是面向对象的哪个特征（ ）
+
+A、封装
+
+B、继承
+
+C、多态
+
+D、以上都不是
+
+39．	下列关于注释作用的描述中，错误的是（）
+
+A、可以对程序进行说明
+
+B、会参与编译
+
+C、可以帮助调试程序
+
+D、帮助整理编程思路
+
+40．	下列关于接口的说法中，错误的是（ ）
+
+A、在JDK 8中，接口中除了抽象方法外，还可以有默认方法和静态方法
+
+B、接口中的方法默认方法可以有方法体
+
+C、在定义接口时，使用interface关键字来声明
+
+D、接口中定义的变量可以被修改
+
+41．	请阅读下面的程序
+
+public class Test {
+
+public static void main(String[] args) {
+
+int temp = 0;
+
+for (int i = 1; i < 5; i++) {
+
+for (int j = 0; j < i; j++) {
+
+temp++;
+
+}
+
+}
+
+System.out.println(temp);
+
+}
+
+}
+
+下列选项中，哪个是程序的运行结果（）
+
+A、5
+
+B、9
+
+C、10
+
+D、15
+
+42．	对于使用多态的应用程序，某个对象的确切类型何时能知道（ ）
+
+A、执行时才可以知道
+
+B、应用程序编译时能够判断
+
+C、程序员编写程序时就已知道
+
+D、永远不会知道
+
+43．	阅读下面的程序
+
+public class Test {
+
+public static void main(String[] args) {
+
+for(int x = 0 ; x <=3 ; x++){
+
+continue;
+
+System.out.print(x%2);
+
+}
+
+}
+
+}
+
+运行结果正确的是（）
+
+A、0123
+
+B、0121
+
+C、012
+
+D、编译失败
+
+44．	StringBuffer类的append()方法的返回值类型是（）
+
+A、String
+
+B、void
+
+C、StringBuffer
+
+D、StringBuilder
+
+45．	阅读下面的代码：
+
+public class Example {
+
+public static void main(String[] args) {
+
+int[] arr = { 4, 1, 6, 3, 9, 8 };       // 定义一个数组
+
+int minIndex = 0;      //初始时设第1个角标处的值为最小值
+
+for (int i = 1; i < arr.length; i++) {
+
+if (_____________) {
+
+minIndex = i;
+
+}
+
+}
+
+System.out.println("数组中的最小值为："+arr[minIndex]);
+
+}
+
+}
+
+如果要计算数组中的最小值，那么上述代码的横线处应该填写（）
+
+A、i<minIndex
+
+B、arr[i]<arr[minIndex]
+
+C、arr[i]>arr[minIndex]
+
+D、i>minIndex
+
+46．	下列情况中，不会使线程返回所持有的对象锁的是（ ）
+
+A、当synchronized()语句块执行完毕
+
+B、当调用了线程的suspend()方法
+
+C、当在synchronized()语句块中出现异常(exception)
+
+D、当持有锁的线程调用该对象的wait()方法
+
+47．	下列目录中，哪一个是用来存放JDK核心源代码的（）
+
+A、lib目录
+
+B、src目录
+
+C、jre目录
+
+D、include目录
+
+48．	下面关于函数式接口相关说法错误的是（）。
+
+A、在JDK 8中，专门为函数式接口引入了一个@FunctionalInterface注解
+
+B、@FunctionalInterface注解只为了表明接口是否为函数式接口
+
+C、所谓函数式接口是指有且仅有一个抽象方法的接口
+
+D、Lamdba表达式是基于函数式接口实现的
+
+49．	阅读下列代码
+
+import java.io.*;
+
+public class Example{
+
+public static void main(String[] args) throws Exception {
+
+// 创建一个带缓冲区的输入流
+
+ BufferedInputStream bis = new BufferedInputStream(new ________( "src.txt"));
+
+// 创建一个带缓冲区的输出流
+
+ BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("des.txt"));
+
+int len;
+
+while ((len = bis.read()) != -1) {
+
+bos.write(len);
+
+}
+
+bis.close();
+
+bos.close();
+
+}
+
+}
+
+请说出程序中，下划线位置的答案（ ）
+
+A、FileInputStream
+
+B、File
+
+C、InputStream
+
+D、以上答案都不正确
+
+50．	下列方法中可以实现线程插队的是（ ）
+
+A、start()
+
+B、run()
+
+C、join()
+
+D、sleep()
+
+51．	下列关于JDK和JRE的说法中，错误的是（    ）
+
+A、JDK是java开发核心组件，是用来编译解释java程序的核心组件
+
+B、JDK包括Java编译器、Java文档生成工具、Java打包工具等
+
+C、安装JDK后，还需要单独安装JRE
+
+D、JRE是java运行环境,用来支持java程序的运行
+
+52．	请阅读下面的程序片段
+
+int x = 1, y = 1;
+
+if (x++ == 2 &amp; ++y == 2) {
+
+x = 7;
+
+}
+
+System.out.println("x=" + x + " , y=" + y);
+
+下列选项中，哪一个是程序的运行结果（ ）
+
+A、x=1 , y=1
+
+B、x=7, y=2
+
+C、x=7, y=1
+
+D、x=2 , y=2
+
+53．	请阅读下面的程序
+
+class Test {
+
+public static void main(String args) {
+
+int a = 3;
+
+int b = 6;
+
+System.out.print(a==b);
+
+System.out.print(a<b);
+
+System.out.print(a!=b);
+
+System.out.print(a>=b);
+
+}
+
+}
+
+下列选项中，哪个是程序的运行结果（）
+
+A、falsefalsetruefalse
+
+B、falsefalsetruetrue
+
+C、falsetruetruefalse
+
+D、truefalsefalsetrue
+
+54．	Java中所有的类都是通过直接或间接地继承（ ）类得到的。
+
+A、java.lang.Object
+
+B、java.lang.Class
+
+C、任意类
+
+D、以上答案都不对
+
+55．	请阅读下面的程序
+
+public class Test {
+
+public static void main(String[] args) {
+
+for(int x =0;x<5;x++) {
+
+if(x%2==0)
+
+break;
+
+System.out.print(x+” “);
+
+}
+
+}
+
+}
+
+下列选项中，哪一个是程序的运行结果（ ）
+
+A、12345
+
+B、024
+
+C、13
+
+D、不输出任何内容
+
+56．	以下关于编译异常说法正确的是（ ）
+
+A、编译异常就是指Exception以及其子类
+
+B、编译异常如果产生，可以不用处理
+
+C、编译异常如果产生，必须处理，要么捕获，要么抛出
+
+D、编译异常指的就是Error
+
+57．	下列关于构造方法的描述中，错误的是（ ）
+
+A、构造方法的方法名必须和类名一致
+
+B、构造方法不能写返回值类型
+
+C、构造方法可以重载
+
+D、构造方法的访问权限必须和类的访问权限一致
+
+58．	下面哪个方法可以实现获取字符在某个字符串中第一次出现的索引（）
+
+A、charAt(int index)
+
+B、 indexOf(int ch)
+
+C、lastIndexOf(int ch)
+
+D、endsWith(String suffix)
+
+59．	下列选项中，按照箭头方向，不可以进行自动类型转换的是（ ）
+
+A、byte→int
+
+B、int→long
+
+C、double→long
+
+D、short→int
+
+60．	阅读下列代码
+
+public class Example {
+
+public static void main(String[] args) {
+
+int[] srcArray = { 11, 12, 13, 14 };
+
+int[] destArray = { 21, 22, 23, 24 };
+
+System.arraycopy(srcArray, 1, destArray, 2, 2);
+
+for (int i = 0; i < destArray.length; i++) {
+
+System.out.print(destArray[i] + " ");
+
+}
+
+}
+
+}
+
+下列选项中，程序的运行结果是（ ）
+
+A、21 22 12 13
+
+B、21 22 11 12
+
+C、21 11 12 24
+
+D、发生数组角标越界异常
+
+61．	下面关于Java语言的描述中，哪些是正确的（ ）
+
+A、Java程序运行之前，需要将后缀名为.java的源文件进行编译。
+
+B、 Java虚拟器可以解释执行.class文件。
+
+C、 Java程序是由虚拟机负责解释执行的，而并非操作系统。
+
+D、 Java程序运行时，必须经过编译和解析两个步骤。
+
+62．	请阅读下面的程序
+
+public class Test {
+
+public static void main(String[] args) {
+
+int a = {2,0,4,1,8,3,5};
+
+int temp;
+
+for (int i = 0; i < a.length - 1; i++) {
+
+for (int j = a.length - 1; j > i; j--) {
+
+if (aj < aj - 1) {
+
+temp = aj;
+
+aj = aj - 1;
+
+aj - 1 = temp;
+
+}
+
+}
+
+}
+
+for (Integer i : a) {
+
+System.out.println(i);
+
+}
+
+}
+
+}
+
+下列选项中，哪一个是程序的运行结果。（ ）
+
+A、8
+
+B、5
+
+C、4
+
+D、3
+
+63．	请阅读下面的程序。
+
+ Class WhileDemo5 {
+
+public static void main(String args) {
+
+int n = 5;
+
+while (n < 10) {
+
+System.out.print(n);
+
+n++;
+
+}
+
+}
+
+}
+
+下列选项中，哪一个是程序运行的结果（ ）
+
+A、无输出
+
+B、输出56789
+
+C、死循环
+
+D、编译错误
+
+64．	请阅读下面的程序
+
+public class Test {
+
+public static void main(String[] args) {
+
+int temp = 0;
+
+for (int i = 1; i < 5; i++) {
+
+for (int j = 0; j < i; j++) {
+
+temp++;
+
+}
+
+}
+
+System.out.println(temp);
+
+}
+
+}
+
+下列选项中，哪一个是正确的运行结果（ ）
+
+A、5
+
+B、9
+
+C、10
+
+D、15
+
+65．	Java属于以下哪种语言（ ）
+
+A、机器语言
+
+B、汇编语言
+
+C、高级语言
+
+D、以上都不对
+
+66．	请阅读下面的程序
+
+public class Test {
+
+public static void main(String[] args) {
+
+int m = 37;
+
+int n = 13;
+
+while (m != n) {
+
+while (m > n) {
+
+m -= n;
+
+}
+
+while (m < n) {
+
+n -= m;
+
+}
+
+}
+
+System.out.println("m=" + m);
+
+}
+
+}
+
+下列选项中，哪一个是正确的运行结果（ ）
+
+A、m=37
+
+B、m=13
+
+C、m=1
+
+D、m=2
+
+67．	下列关于System类的描述中，错误的是（ ）
+
+A、System类是final关键字修饰的类，它不能被其他类所继承
+
+B、System类不能被实例化
+
+C、System类只定义了方法，没有定义属性。
+
+D、System类中提供了获取当前系统属性的方法
+
+68．	假设在E盘下的cn文件夹中有文件abc.txt，则下列代码的运行结果为（ ）
+
+class Example {
+
+public static void main(String[] args) {
+
+File file = new File("E:\\cn"); // 这是一个代表目录的File对象
+
+if (file.exists()) {
+
+System.out.println(file.delete());
+
+}
+
+}
+
+}
+
+A、false文件夹删除不成功，abc.txt删除不成功
+
+B、false文件夹删除不成功，abc.txt删除成功
+
+C、true文件夹删除成功
+
+D、true文件夹删除不成功，abc.txt删除成功
+
+69．	请阅读下面的程序片段
+
+boolean b=true;
+
+if(b=false) {
+
+System.out.println("a");
+
+} else if(b) {
+
+System.out.println(b);
+
+} else if(!b) {
+
+System.out.println("c");
+
+} else {
+
+System.out.println("d");
+
+}
+
+下面选项中，哪一个是程序的执行结果（ ）
+
+A、a
+
+B、b
+
+C、c
+
+D、d
+
+70．	阅读下列代码
+
+public class Example {
+
+public static void main(String[] args) throws Exception {
+
+OutputStream out = new FileOutputStream("itcast.txt ", true);
+
+String str = "欢迎你!";
+
+byte[] b = str.getBytes();
+
+for (int i = 0; i < b.length; i++) {
+
+out.write(b);
+
+}
+
+out.close();
+
+}
+
+}
+
+请说出下划线上，填写的方法名称( )
+
+A、read()
+
+B、write()
+
+C、close()
+
+D、available()
+
+71．	请阅读下面的程序片段
+
+int x = 3;
+
+if (x > 5) {
+
+System.out.print("a");
+
+} else {
+
+System.out.print("b");
+
+}
+
+下列选项中，哪个是程序的运行结果（ ）
+
+A、a
+
+B、b
+
+C、ab
+
+D、编译错误
+
+72．	请阅读下面的程序
+
+public class Demo {
+
+public static void sum(int a, int b) {
+
+System.out.println("int:" + (a + b));
+
+}
+
+public static void sum(int a, float b) {
+
+System.out.println("float:" + (a + b));
+
+}
+
+public static void sum(int a, double b) {
+
+System.out.println("double:" + (a + b));
+
+}
+
+public static void main(String[] args) {
+
+int a = 10;
+
+long b = 20;
+
+sum(a, b);
+
+}
+
+}
+
+下列选项中，哪一个是程序的运行结果（ ）
+
+A、int:30
+
+B、float:30.0
+
+C、double:30.0
+
+D、int:30.0
+
+73．	下面关于javac命令作用的描述中，正确的是（）。
+
+A、可以执行java程序
+
+B、可以将编写好的Java文件编译成.class文件
+
+C、可以把文件压缩
+
+D、可以把数据打包
+
+74．	请阅读下面的程序
+
+public class Example {
+
+public static void main(String[] args) {
+
+char c = 'B';
+
+switch(c) {
+
+case 'A':
+
+System.out.println("优");
+
+break;
+
+case 'B':
+
+System.out.println("良");
+
+break;
+
+case 'C':
+
+System.out.println("差");
+
+break;
+
+}
+
+}
+
+}
+
+下列选项中，哪一个才是程序的运行结果（ ）
+
+A、优
+
+B、良
+
+C、差
+
+D、编译失败
+
+75．	下列关于异常的说法中，正确的是（）
+
+A、异常是一种对象
+
+B、一旦程序运行，异常就将被创建
+
+C、为了保证程序运行速度，要避免控制异常
+
+D、以上说法都对
+
+76．	下列选项中，可以正确实现String初始化的是（）
+
+A、String str = "abc";
+
+B、String str = 'abc';
+
+C、String str = abc;
+
+D、String str = 0;
+
+77．	已知String s="abcdefg"，则s.substring(2,5)的返回值为（）
+
+A、"bcde"
+
+B、"cde"
+
+C、"cdef"
+
+D、"def"
+
+78．	以下关于JavaFX在发展的过程中核心版本描述，错误的是（）
+
+A、JavaFX 1.0：使用JavaFX Script的静态、声明式的编程语言来开发JavaFX应用程序
+
+B、JavaFX 2.0之后的版本摒弃了JavaFX Script语言，而是作为一个Java API来使用
+
+C、从JDK 8开始，JavaFX就开始与JDK捆绑使用，并结合JDK 8的新增特性
+
+D、因为JavaFX Script将会被编译为Java字节码，开发人员可以使用Java代码代替
+
+79．	以下代码执行后的结果是:（ ）
+
+public class Person {
+
+String name = “小芳”;
+
+public Person(String name) { name = “小兰”; }
+
+public void show() { this.name = “小翠”; }
+
+public static void main(String[] args) {
+
+Person p = new Person(“小凤”);
+
+System.out.print(p.name);
+
+p.show();
+
+System.out.print(p.name);
+
+}
+
+}
+
+A、小兰小翠
+
+B、小凤小翠
+
+C、小芳小翠
+
+D、程序编码失败
+
+80．	请将下列四个步骤进行排列，完成文件的赋值操作( ) ① 将字节流输入流和源文件相关联，输出流和目标文件相关联。 
+② 明确源文件和目标文件。 ③ 使用输入流的读取方法读取文件，并将字节写入到目标文件中。 ④ 关闭资源。
+
+A、①②③④
+
+B、②①③④
+
+C、②③①④
+
+D、①③②④
+
+81．	下列选项中，不属于面向对象特征的是（ ）
+
+A、继承性
+
+B、封装性
+
+C、跨平台性
+
+D、多态性
+
+82．	下列程序运行结果是（ ）
+
+public class Demo {
+
+public static void main(String[] args) {
+
+ Demo demo = new Demo();
+
+demo.show(new Car() {
+
+public void run() {
+
+System.out.println("demo run");
+
+}
+
+});
+
+}
+
+public void show(Car c) {
+
+c.run();
+
+}
+
+}
+
+abstract class Car {
+
+public void run() {
+
+System.out.println("car run...");
+
+}
+
+}
+
+A、carrun
+
+B、demorun
+
+C、无结果
+
+D、程序编译报错
+
+83．	请阅读下面的程序
+
+public class Example09 {
+
+public static void main(String args) {
+
+int grade =76; // 定义学生成绩
+
+if (grade > 80) { // 满足条件 grade > 80
+
+System.out.println("成绩为优");
+
+} else if (grade > 70) {// 不满足条件 grade > 80 ，但满足条件 grade > 70
+
+System.out.println("成绩为良");
+
+} else if (grade > 60) { // 不满足条件 grade > 70 ，但满足条件 grade > 60
+
+System.out.println("成绩为中");
+
+} else { // 不满足条件 grade > 60
+
+System.out.println("成绩为差");
+
+}
+
+}
+
+}
+
+程序的运行结果是（）
+
+A、成绩为优
+
+B、成绩为良
+
+C、成绩为中
+
+D、成绩为差
+
+84．	以下有关Calendar类相关描述，错误的是（）
+
+A、lendar类是一个抽象类，不可以被实例化
+
+B、在使用Calendar.MONTH字段时，月份的起始值是从从1开始
+
+C、添加和修改时间的功能就可以通过Calendar类中的add()和set()方法来实现
+
+D、Calendar.Date表示的是天数，当天数累加到当月的最大值时，如果继续再累加一次，就会从1开始计数，同时月份值会加1
+
+85．	请阅读下面的程序
+
+public class Test {
+
+public static void main(String[] args) {
+
+int x;
+
+int y;
+
+for (x = 1, y = 1; x <= 100; x++) {
+
+if (y >= 20) {
+
+break;
+
+}
+
+if (y % 3 == 1) {
+
+y += 3;
+
+continue;
+
+}
+
+y -= 5;
+
+}
+
+System.out.println(“x=” + x + “,y=” + y);
+
+}
+
+}
+
+下列选项中，哪一个是程序的运行结果（ ）
+
+A、x=8
+
+B、y=22
+
+C、x=22
+
+D、y=8
+
+86．	下列关于类和对象的描述，错误的是（ ）
+
+A、对象是类的实例
+
+B、一个类只能有一个实例化对象
+
+C、类是对象的抽象
+
+D、类用于描述一组对象的共同特征和行为
+
+87．	假如indexOf()方法未能找到所指定的子字符串，那么其返回值为（ ）
+
+A、false
+
+B、0
+
+C、-1
+
+D、以上答案都不对
+
+88．	以下对于try…catch语句描述正确的是（ ）
+
+A、try…catch语句处理程序中的错误
+
+B、try...catch语句处理程序中的bug
+
+C、try...catch语句处理程序中的异常
+
+D、以上说法都不正确
+
+89．	下列选项中，关于final修饰成员变量的说法正确的是（ ）
+
+A、被final修饰的成员变量可以被多次赋值
+
+B、被final修饰的成员变量为常量
+
+C、final只能在接口中修饰成员变量
+
+D、以上都不对
+
+90．	以下关于java命令作用的描述中，正确的是（ ）
+
+A、它专门负责解析由Java编译器生成的.class文件
+
+B、它可以将编写好的Java文件编译成.class文件
+
+C、可以把文件压缩
+
+D、可以把数据打包
+
+91．	下列选项中，哪一个不是InputStream的直接子类（ ）
+
+A、ByteArrayInputStream
+
+B、FileInputStream
+
+C、BufferedInputStream
+
+D、PipedInputStream
+
+92．	下列修饰符中，成员内部类被（ ）修饰后，可以被外界访问。
+
+A、default
+
+B、protected
+
+C、public
+
+D、private
+
+93．	下列选项，可用于存储结果集的对象是（）(单选)
+
+A、ResultSet
+
+B、Connection
+
+C、Statement
+
+D、PreparedStatement
+
+94．	下面关于静态同步方法说法错误的是（ ）
+
+A、静态方法必须使用class对象来同步。
+
+B、对于静态的同步方法而言，该方法的同步监视器不是this，而是该类本身。
+
+C、静态同步方法和以当前类为同步监视器的同步代码块不能同时执行。
+
+D、一个类中的多个同步静态方法可以同时被多个线程执行。
+
+95．	若double val = Math.ceil(-11.9);，则val的值是（ ）
+
+A、11.9
+
+B、-11.0
+
+C、-11.5
+
+D、-12.0
+
+96．	阅读下段代码，
+
+class Dog {
+
+public String name;
+
+ Dog(String name){
+
+this.name =name;
+
+}
+
+}
+
+public class Demo1 {
+
+public static void main(String[] args){
+
+ Dog dog1 = new Dog("xiaohuang");
+
+ Dog dog2 = new Dog("xiaohuang");
+
+String s1 = dog1.toString();
+
+String s2 = dog2.toString();
+
+String s3 = "xiaohuang";
+
+String s4 = "xiaohuang";
+
+}
+
+}
+
+返回值为true的是（ ）
+
+A、dog1.equals(dog2)
+
+B、s1.equals(s2)
+
+C、s3.equals(s4)
+
+D、dog1==dog2
+
+97．	下列关于Java特点的描述中，错误的是（）
+
+A、Java语言不支持指针
+
+B、Java具有自动垃圾回收的机制
+
+C、Java只能运行在Window和Linux平台
+
+D、Java允许多个线程同时执行
+
+98．	下列关于父类方法重写的描述中，错误的是（）
+
+A、如果父类方法的访问权限是public，子类重写父类该方法时的访问权限不能是private
+
+B、子类重写父类方法时，重写的方法名、参数列表以及返回值类型必须和父类保持一致
+
+C、如果父类的方法被final修饰，那么该方法不能被子类重写
+
+D、子类继承父类后，可以重写父类定义的所有方法
+
+99．	下列关于线程状态转换的描述中，错误的是（ ）
+
+A、死亡状态下的线程调用start()方法可以使其重新进入就绪状态
+
+B、运行状态下的线程调用wait()方法可以使其进入到等待状态
+
+C、线程获得CPU使用权后会从就绪状态转换成运行状态
+
+D、线程失去CPU使用权后会从运行状态转换成就绪状态
+
+100．	下列关于多线程中的静态同步方法说法中，正确的是（ ）
+
+A、静态同步方法的锁不是this，而是该方法所在类的class对象。
+
+B、静态同步方法的锁既可以是this，也可以是该方法所在类的class对象。
+
+C、一个类中的多个静态同步方法可以同时被多个线程执行。
+
+D、不同类的静态同步方法被多线程访问时，线程间需要等待。
+
+101．	下列选项中，按照箭头方向，可以进行自动类型转换的是（ ）
+
+A、char→int
+
+B、short→char
+
+C、float→long
+
+D、char→short
+
+102．	下面选项中不是面向对象的特征的是（ ）
+
+A、封装
+
+B、继承
+
+C、多态
+
+D、重构
+
+103．	以下语法格式中，哪一个是三元运算符的语法格式（ ）
+
+A、表达式1:表达式2?表达式3
+
+B、表达式1?表达式2:表达式3
+
+C、表达式1:表达式2:表达式3
+
+D、以上答案都不对
+
+104．	下面关于布尔类型变量的定义中，正确的是（ ）
+
+A、boolean a=TRUE;
+
+B、boolean b=FALSE;
+
+C、boolean c="true";
+
+D、boolean d=false;
+
+105．	下列选项中，哪个可以用来创建对象（）
+
+A、new
+
+B、this
+
+C、super
+
+D、abstract
+
+106．	阅读下面一段代码，代码的输出结果是（）
+
+Integer in1 = new Integer(10);
+
+Integer in2 = new Integer(10);
+
+Integer in3 = 10;
+
+Integer in4 = 10;
+
+System.out.println(in1 == in2);
+
+System.out.println(in1 == in3);
+
+System.out.println(in3 == in4);
+
+A、truetruetrue
+
+B、falsefalsetrue
+
+C、falsefalsefalse
+
+D、falsetruefalse
+
+107．	Java提供了4种访问级别，以下控制级别由小到大依次列出正确的是（）
+
+A、private、default、protected public
+
+B、default、private、protected public
+
+C、protected、default、private、public
+
+D、protected、private、default、public
+
+108．	阅读下面的代码
+
+public class Example{
+
+public static void main(String[] args) {
+
+String s1=new String("abc");
+
+String s2=s1.intern();
+
+String s3="abc";
+
+System.out.println(s1==s2);
+
+System.out.println(s2==s3);
+
+System.out.println(s1==s3);
+
+}
+
+}
+
+程序的输出结果是（）
+
+A、falsetruefalse
+
+B、falsetruetrue
+
+C、falsefalsetrue
+
+D、truetruefalse
+
+109．	下列关于JDK的说法中，错误的是（ ）
+
+A、JDK是Java开发环境的简称
+
+B、JDK包括Java编译器、Java文档生成工具、Java打包工具等
+
+C、安装JDK后，还需要单独安装JRE
+
+D、JDK是整个Java的核心
+
+110．	下列属于定义同步代码块的关键字的是（ ）
+
+A、abstract
+
+B、volatile
+
+C、synchronized
+
+D、goto
+
+111．	JDBC驱动器也称为JDBC驱动程序，它的提供者是（）
+
+A、SUN
+
+B、数据库厂商
+
+C、ORACLE
+
+D、ISO
+
+112．	以下标识符中，不合法的是（ ）
+
+A、user
+
+B、$inner
+
+C、class
+
+D、login_1
+
+113．	若想实现JRadioButton按钮之间的互斥，需要使用（ ）类
+
+A、ButtonGroup
+
+B、JComboBox
+
+C、AbstractButton
+
+D、以上都不行
+
+114．	下列选项中，属于布尔常量的是（ ）
+
+A、198
+
+B、2e3f
+
+C、true
+
+D、null
+
+115．	下列选项中，能够执行带参数占位符SQL语句的是（）(单选)
+
+A、Statement
+
+B、Connection
+
+C、PreparedStatement
+
+D、ResultSet
+
+116．	下列关于File类的描述中，错误的是（）
+
+A、File类用于封装一个路径，该路径可以指向一个文件，也可以指向一个目录
+
+B、使用File类的delete()方法删除文件或目录时，如果当前目录下存在文件，必须先删除文件，再删除目录
+
+C、File类的list（）方法用于遍历某个指定目录下的所有文件名称
+
+D、File类的getPath()方法用于返回文件的绝对路径
+
+117．	下列选项中，关于Statement描述错误的是（）
+
+A、Statement是用来执行SQL语句的
+
+B、Statement是PreparedStatement的子接口
+
+C、获取Statement实现需要使用Connection的createStatement()方法
+
+D、PreparedStatement能使用参数占位符，而Statement不行
+
+118．	阅读下列代码 System.out.println(“Hello” + 9 + 1); 下列选项中，哪个是正确的输出结果（ ）
+
+A、Hello91
+
+B、Hello10
+
+C、Compilationfails
+
+D、Anexceptionisthrownatruntime
+
+119．	下列选项中，可以正确配置classpath的命令是（ ）
+
+A、set classpath =C:\\Program Files\\Java\\jdk1.7.0_15\\bin
+
+B、set classpath : C:\\Program Files\\Java\\jdk1.7.0_15\\bin
+
+C、classpath set =C:\\Program Files\\Java\\jdk1.7.0_15\\bin
+
+D、classpath set : C:\\Program Files\\Java\\jdk1.7.0_15\\bin
+
+120．	以下关于成员属性与成员方法的描述中，错误的是（ ）
+
+A、成员属性我们也叫成员变量，它就是描述对象的特征。它可以定义在类中，也可以定义在方法中
+
+B、成员方法用于描述对象的行为
+
+C、在类中定义的变量，我们称为成员变量
+
+D、在类中定义的方法，我们称变成员方法
+
+121．	以下哪个方法可以实现线程让步（ ）
+
+A、yield()
+
+B、sleep()
+
+C、wait()
+
+D、join()
+
+122．	下列层次中，哪一层是整个TCP/IP协议的核心（ ）
+
+A、应用层
+
+B、传输层
+
+C、网络层
+
+D、链路层
+
+123．	下列关于变量作用域的说法中，正确的是（ ）
+
+A、在main()方法中任何位置定义的变量，其作用域为整个main()方法
+
+B、代码块中定义的变量，在代码块外也是可以使用的。
+
+C、变量的作用域为：从定义处开始，到变量所在代码块结束的位置。
+
+D、变量的作用域不受代码块的限制。
+
+124．	在Java语言中，String类型的成员变量的默认初始值是（ ）
+
+A、false
+
+B、
+
+C、0
+
+D、null
+
+125．	下列关于JDK、JRE和JVM关系的描述中，正确的是（ ）。
+
+A、JDK中包含了JRE，JVM中包含了JRE。
+
+B、JRE中包含了JDK，JDK中包含了JVM。
+
+C、JRE中包含了JDK，JVM中包含了JRE。
+
+D、JDK中包含了JRE，JRE中包含了JVM。
+
+126．	当String s=null;时，下列选项中会抛出空指针异常的是（ ）
+
+A、if((s!=null)&(s.length()>0))
+
+B、if((s!=null)&&(s.length()>0))
+
+C、if((s!=null)&&(s.length()==0))
+
+D、if((s==null)||(s.length()==0))
+
+127．	下面关于path和classpath的说法中，错误的是（）
+
+A、path用来指定java虚拟机(JVM)所在的目录
+
+B、classpath用来指定我们自己所写的或要用到的类文件(.jar文件)所在的目录
+
+C、在dos命令行中，classpath和path环境变量的查看与配置的方式不相同
+
+D、只要设置了classpath这个环境变量系统就不会再在当前目录下查询某个类
+
+128．	下列关于UDP协议特点的描述中，错误的是（ ）
+
+A、在UDP协议中，数据的发送端和接收端不建立逻辑连接。
+
+B、UDP协议消耗资源小，通信效率高，通常都会用于音频、视频和普通数据的传输。
+
+C、UDP协议在传输数据时不能保证数据的完整性，因此在传输重要数据时不建议使用UDP协议。
+
+D、在UDP协议连接中，必须要明确客户端与服务器端。
+
+129．	下列关于浮点型数据的定义，哪一个不能通过编译（ ）
+
+A、double a=12.45;
+
+B、float b=12.45;
+
+C、double c=100;
+
+D、float d=100;
+
+130．	如果jdk的安装路径为：c:\jdk，若想在命令窗口中任何当前路径下，都可以直接使用javac和java命令，需要将环境变量path设置为以下哪个选项（）
+
+A、c:\\jdk
+
+B、c:\\jdk\\bin
+
+C、c:\\jre\\bin
+
+D、c:\\jre
+
+131．	下列选项中，哪一个是单行注释的符号（ ）
+
+A、\\
+
+B、//
+
+C、/
+
+D、\\
+
+132．	想实现事件的监听机制，首先需要（ ）
+
+A、通过addWindowListener()方法为事件源注册事件监听器对象
+
+B、事件监听器调用相应的方法来处理相应的事件
+
+C、定义一个类实现事件监听器的接口
+
+D、实现WindowListener
+
+133．	关于变量类型转换的描述中，正确的是（ ）
+
+A、只有数据类型相同的数据才能进行运算。
+
+B、byte类型和short类型的数据是不能一起运算的。
+
+C、两个byte类型数据一起运算时会把先自动提升到int类型再运算。
+
+D、两个整型在一起运算时，结果一定是int。
+
+134．	下列关于多态的说法中，正确的是（ ）
+
+A、多态可以解决方法同名的问题
+
+B、 多态可以提高程序的可扩展性
+
+C、 多态可以提高程序的可维护性
+
+D、 在多态中，使用父类引用可以操作子类的所有方法
+
+135．	已知类的继承关系如下：
+
+class A
+
+class B extends A
+
+class C extends A
+
+则以下语句能通过编译的是（ ）
+
+A、A a=new B();
+
+B、C c=new B();
+
+C、C c=new A();
+
+D、B b=new C();
+
+136．	用于表示这些窗体事件的类是（ ）
+
+A、WindowEvent
+
+B、WindowListener
+
+C、ActionEvent
+
+D、MouseAdapter
+
+137．	下列构造方法中，不属于ServerSocket类构造方法的是（ ）
+
+A、ServerSocket(Stringhost
+
+B、intport)
+
+C、ServerSocket(intport)
+
+D、ServerSocket(intport
+
+138．	下列关于Java后台线程的描述，错误的是（）
+
+A、对Java程序来说，只要还有一个前台线程在运行，这个进程就不会结束
+
+B、如果某个线程对象在启动之前调用了setDaemon(false)语句，这个线程就变成一个后台线程
+
+C、在start()方法执行后，使用setDaemon(true)可以将线程设置为后台线程
+
+D、只要进程中不存在前台线程，整个进程就会结束
+
+139．	下列选项中，哪一个是多行注释符号（ ）
+
+A、//**//
+
+B、/*/*
+
+C、//
+
+D、/**/
+
+140．	下面关于FileInputStream和FileOutputStream的说法中，错误的是（）
+
+A、FileInputStream是InputStream的子类，它是操作文件的字节输入流
+
+B、FileOutputStream是OutputStream的子类，它是操作文件的字节输出流
+
+C、如果使用FileOutputStream向一个已存在的文件中写入数据，那么写入的数据会被追加到该文件原先的数据后面
+
+D、使用FileInputStream读取文件数据时，必须保证要读取的文件存在并且是可读的
+
+141．	处理ActionEvent事件的监听器对象需要实现哪个接口（ ）
+
+A、ActionListener
+
+B、KeyListener
+
+C、KeyEvent
+
+D、KeyAdapter
+
+142．	请阅读下列的程序
+
+public class Example01 {
+
+public static void main(String args) {
+
+int num = 127;
+
+byte b = num;
+
+System.out.println(b);
+
+}
+
+}
+
+程序的运行结果是（ ）
+
+A、编译报错
+
+B、编译通过，执行输出127
+
+C、编译通过，执行报错
+
+D、以上选项均不正确
+
+143．	请阅读下面的程序
+
+public class Example {
+
+public static void main(String args) {
+
+int x = 1;
+
+do {
+
+x++;
+
+} while (x <= 4);
+
+System.out.println("x = " + x);
+
+}
+
+}
+
+运行程序后，下列选项中，哪一个是x的值。（ ）
+
+A、3
+
+B、4
+
+C、5
+
+D、6
+
+144．	下面关于classpath的说法中，错误的是（）
+
+A、classpath和path环境变量的查看与配置的方式完全相同。
+
+B、为了让Java虚拟机能找到所需的class文件，就需要对classpath环境变量进行设置。
+
+C、从JDK5.0开始，如果classpath环境变量没有进行设置，Java虚拟机会自动将其设置为&quot;.&quot;，也就是当前目录。
+
+D、在命令行窗口中配置了classpath后，重新打开新命令行窗口依然生效
+
+145．	下面哪个选项可以获取Runtime类的实例（）
+
+A、Runtime r = new Runtime();
+
+B、Runtime r = Runtime.getRuntime();
+
+C、Runtime r = Runtime.getInstance();
+
+D、以上选项都不能获取Runtime实例
+
+146．	float类型成员变量的默认初始化值是（ ）
+
+A、0
+
+B、false
+
+C、null
+
+D、0.0F
+
+147．	以下关于继承的描述，说法正确的是（ ）
+
+A、子类继承父类的所有属性和方法
+
+B、子类可以继承父类的私有的属性和方法
+
+C、子类可以继承父类的公有的属性和方法
+
+D、创建子类对象时，父类的所有构造方法都会被执行
+
+148．	下面关于path环境变量的说法中，错误的是（）
+
+A、path环境变量是系统环境变量中的一种，它用于保存一系列的路径
+
+B、在命令行窗口输入&quot;setpath&quot;命令，可以查看当前系统的path环境变量
+
+C、在命令窗口对环境变量进行的任何修改只对当前窗口有效，一旦关闭窗口，所有的设置都会被取消
+
+D、配置系统环境变量时以英文半角逗号(
+
+149．	下列关于while语句的描述中，正确的是（　　）
+
+A、while语句循环体中可以没有语句
+
+B、while语句的循环条件可以是整型变量
+
+C、while语句的循环体必须使用大括号
+
+D、while语句的循环体至少被执行一次
+
+150．	下面对于final修饰方法的描述中，正确的是（）
+
+A、final修饰的静态方法不能被类名调用
+
+B、final修饰的方法不能被子类重写
+
+C、final修饰的抽象方法可以被子类重写
+
+D、final只能修饰非静态的方法
+
+151．	下列关于protected的说法中，正确的是（）
+
+A、protected修饰的方法，只能给子类使用
+
+B、protected修饰的类，类中的所有方法只能给子类使用
+
+C、如果一个类的成员被protected修饰，那么这个成员既能被同一包下的其它类访问，也能被不同包下该类的子类访问。
+
+D、以上都不对
+
+152．	自定义运行时异常，必须继承自（ ）类。
+
+A、Error
+
+B、Exception
+
+C、RuntimeException
+
+D、Throwable
+
+153．	请阅读下面的程序
+
+public class Example03 {
+
+public static void main(String args) {
+
+int x = 3;
+
+if (x > 5) {
+
+System.out.println("a");
+
+} else {
+
+System.out.println("b");
+
+}
+
+}
+
+}
+
+程序的运行结果是（）
+
+A、true
+
+B、false
+
+C、a
+
+D、b
+
+154．	以下关于Runnable接口的描述错误的是（ ）
+
+A、通过实现Runnable接口可以创建多线程程序
+
+B、Runnable接口是在java.lang包下
+
+C、实现Runnable接口必须重写run()方法
+
+D、通过Runnable接口中的start()方法可以开启线程
+
+155．	InetAddress类中能获取IP地址及主机名的方法是（ ）
+
+A、getHostName()
+
+B、getLocalHost()
+
+C、getHostAddress()
+
+D、getAddress()
+
+156．	下列目录中，哪一个是用来存放JDK可执行程序的（ ）
+
+A、db目录
+
+B、jre目录
+
+C、lib目录
+
+D、bin目录
+
+157．	下列选项中，能够创建CallableStatement对象的方法是（ ）(单选)
+
+A、createStatement()
+
+B、prepareStatement()
+
+C、prepareCall()
+
+D、createCallableStatement()
+
+158．	下列对于Runtime的描述中，正确的是（ ）
+
+A、每一个Java应用程序运行时都产生一个Runtime类实例
+
+B、 Runtime实例可以将应用程序和运行环境相结合
+
+C、 Runtime类没有构造函数
+
+D、 Runtime实例不需要创建，直接通过getRuntime()方法获取
+
+159．	FlowLayout的三个构造方法中， FlowLayout(int align,int hgap,int vgap)的作用是（ ）
+
+A、组件默认居中对齐，水平、垂直间距默认为5个单位
+
+B、指定组件相对于容器的对齐方式，水平、垂直间距默认为5个单位
+
+C、指定组件的对齐方式和水平、垂直间距
+
+D、以上都错误
+
+160．	JTextField的构造方法中，方法JTextField(String text,int column)的作用是（）
+
+A、创建一个空的文本框，初始字符串为null
+
+B、创建一个具有指定列数的文本框，初始字符串为null
+
+C、创建一个显示指定初始字符串的文本框
+
+D、创建一个具有指定列数、并显示指定初始字符串的文本框
+
+161．	下列方法中，可以实现线程让步的是（ ）
+
+A、sleep()
+
+B、wait()
+
+C、yield()
+
+D、join()
+
+162．	下面选项中，能够将游标移动到最后一行的下一个位置的方法是（ ）(单选)
+
+A、afterLast()
+
+B、absolute(introw)
+
+C、previous()
+
+D、last()
+
+163．	在JScrollPane的构造方法中，用于创建一个显示指定组件的JScrollPane面板，只要组件的内容超过视图大小就会显示水平和垂直滚动条的方法是（）
+
+A、JScrollPane()
+
+B、JScrollPane(Componentview)
+
+C、JScrollPane(Componentview
+
+D、intvsbPolicy
+
+164．	下列关于int类型变量的定义，错误的是（ ）
+
+A、int a=10;
+
+B、int b
+
+C、c=20;
+
+D、int d=e=30;
+
+165．	请阅读下面的程序，选择正确的运行结果。（）
+
+class Demo{
+
+private static int x ;
+
+public static void main(String[] args){
+
+System.out.println(x++);
+
+}
+
+}
+
+A、0
+
+B、1
+
+C、无结果
+
+D、编译失败
+
+166．	函数重写与函数重载的相同之处是（）
+
+A、权限修饰符
+
+B、函数名
+
+C、返回值类型
+
+D、形参列表
+
+167．	GridLayout 的三个构造方法中，能够指定容器的行数和列数以及组件之间的水平、垂直间距的是（ ）
+
+A、GridLayout()
+
+B、GridLayout(introws
+
+C、intcols)
+
+D、GridLayout(introws
+
+168．	下列数据类型中，哪种数据类型转为int类型需要进行强制转换（）
+
+A、byte
+
+B、short
+
+C、char
+
+D、float
+
+169．	下列关于对象的类型转换的描述，说法错误的是（ ）
+
+A、对象的类型转换可通过自动转换或强制转换进行
+
+B、无继承关系的两个类的对象之间试图转换会出现编译错误
+
+C、由new语句创建的父类对象可以强制转换为子类的对象
+
+D、子类的对象转换为父类类型后，父类对象不能调用子类的特有方法
+
+170．	下列关于throws关键字的说法中，错误的是（）
+
+A、throws关键字用于抛出异常
+
+B、可以使用throws关键字一次抛出多种类型的异常
+
+C、使用throws关键字抛出的异常，后续调用者在使用时无需处理
+
+D、使用throws关键字抛出异常后，程序可以编译通过
+
+171．	下列关于多行注释的说法中，哪一个是正确的（ ）
+
+A、多行注释中不能嵌套单行注释
+
+B、多行注释中可以嵌套多行注释
+
+C、多行注释中不可以有分号，逗号，括号等符号
+
+D、多行注释中可以没有换行
+
+172．	下面选项中，能够将游标从当前位置向下移一行的方法是（ ）(单选)
+
+A、next()
+
+B、absolute(introw)
+
+C、previous()
+
+D、last()
+
+173．	下列是Math类中的一些常用方法，其中用于获取大于等于0.0且小于1.0的随机数的方法是（ ）
+
+A、random()
+
+B、abs()
+
+C、sin()
+
+D、pow()
+
+174．	请阅读下面的程序
+
+public class Test {
+
+public static void main(String[] args) {
+
+for(int x = 0 ; x <=3 ; x++){
+
+continue;
+
+System.out.print(x%2+” “);
+
+}
+
+}
+
+}
+
+下列选项中，哪一个是程序的运行结果（ ）
+
+A、0123
+
+B、0121
+
+C、012
+
+D、编译失败
+
+175．	阅读下面的程序
+
+class Example{
+
+public static void main(String[] args) throws Exception{
+
+int x = 0;
+
+try{
+
+x = div(5,2);
+
+}catch(Exception e){
+
+System.out.println(e);
+
+}
+
+System.out.println(x);
+
+}
+
+public static int div(int a,int b){
+
+return a / b ;
+
+}
+
+}
+
+程序的输出结果是（）
+
+A、2.5
+
+B、2
+
+C、2.0
+
+D、编译失败
+
+176．	下列关于构造方法的描述，错误的是（）
+
+A、一个类中只能定义一个空参数的构造方法
+
+B、一个类中可以定义多个构造方法
+
+C、构造方法的方法名前面没有返回值类型的声明
+
+D、在构造方法中不能使用return语句返回一个值，但是可以单独使用return作为方法的结束
+
+177．	下列方法中，会导致DatagramSocket类发生阻塞的方法是（ ）
+
+A、connect()
+
+B、bind()
+
+C、receive()
+
+D、send()
+
+178．	下面选项中，用于调用数据库存储过程的方法是（ ）(单选)
+
+A、prepareCall(Stringsql)
+
+B、prepareStatement(Stringsql)
+
+C、registerDriver(Driverdriver)
+
+D、createStatement()
+
+179．	阅读下面的代码
+
+class Example{
+
+public static void main(String[] args){
+
+int a = 1;
+
+int b = a++;
+
+int c = ++a;
+
+int d = a++ + ++a;
+
+System.out.print(a + "," + b + "," + c + "," + d);
+
+}
+
+}
+
+下列选项中，哪个是程序正确的输出结果（）
+
+A、5,1,3,8
+
+B、5,1,3,9
+
+C、2,1,3,8
+
+D、2,1,3,9
+
+180．	若int a = 7;a %= 2;则执行后，变量a的值是（ ）
+
+A、7
+
+B、1
+
+C、2
+
+D、3
+
+181．	下列选项中，按照箭头方向，需要进行强制类型转换的是（ ）
+
+A、double←float
+
+B、float←long
+
+C、int←char
+
+D、char←byte
+
+182．	下列关于父类方法重写的描述中，错误的是（）
+
+A、如果父类方法的访问权限是public，子类重写父类该方法时的访问权限不能是private
+
+B、子类重写父类方法时，重写的方法名、参数列表以及返回值类型必须和父类保持一致
+
+C、如果父类的方法被final修饰，那么该方法不能被子类重写
+
+D、子类继承父类后，可以重写父类定义的所有方法
+
+183．	下面选项中，用于将参数化的SQL语句发送到数据库的方法是（ ）(单选)
+
+A、prepareCall(Stringsql)
+
+B、prepareStatement(Stringsql)
+
+C、registerDriver(Driverdriver)
+
+D、createStatement()
+
+184．	JScrollPane提供的方法中，用于指定水平滚动条策略，即水平滚动条何时显示在滚动面板上的方法是（）
+
+A、voidsetHorizontalBarPolicy(intpolicy)
+
+B、voidsetVerticalBarPolicy(intpolicy)
+
+C、voidsetViewportView(Componentview)
+
+D、以上都错误
+
+185．	下列选项中，不属于基本数据类型的是（ ）
+
+A、String
+
+B、short
+
+C、boolean
+
+D、char
+
+186．	关于continue语句的使用范围，下列说法正确的是（ ）
+
+A、continue语句可以在选择语句中使用
+
+B、continue语句可以在条件语句中使用
+
+C、continue语句可以在循环语句中使用
+
+D、不输出任何内容
+
+187．	下列关于静态方法的描述中，错误的是（ ）
+
+A、静态方法指的是被static关键字修饰的方法
+
+B、静态方法不占用对象的内存空间，而非静态方法占有对象的内容空间
+
+C、静态方法内可以使用this关键字
+
+D、静态方法内部只能访问被static修饰的成员
+
+188．	KeyEvent类位于下列哪个包中（）
+
+A、java.awt
+
+B、java.awt.event
+
+C、java.awt.dnd
+
+D、java.awt.im
+
+189．	下列ServerSocket类的方法中，用于接收来自客户端请求的方法是（ ）
+
+A、accept()
+
+B、getOutputStream()
+
+C、receive()
+
+D、get()
+
+190．	下列关于选择结构语句的说法中，错误的是（）
+
+A、if语句中的条件表达式是一个布尔值
+
+B、if语句和switch语句都属于选择结构语句
+
+C、switch语句中的表达式只能是布尔类型的值
+
+D、switch语句中的表达式可以是String类型
+
+191．	下面关于构造方法的调用，正确的是（ ）
+
+A、构造方法在类定义的时候被调用
+
+B、构造方法在创建对象的时候被调用
+
+C、构造方法在调用对象方法时被调用
+
+D、构造方法在使用对象的变量时被调用
+
+192．	下列关于continue语句的说法中，正确的是（ ）
+
+A、continue语句可以在选择语句中使用
+
+B、continue语句可以在条件语句中使用
+
+C、continue语句可以在循环语句中使用
+
+D、continue语句可以在任何语句中使用
+
+193．	下面关于重载的描述，错误的是（）
+
+A、构造方法不能重载
+
+B、重载要求方法名相同，参数列表不同
+
+C、方法重载发生在一个类的内部
+
+D、方法的返回值类型不是区分方法重载的条件
+
+194．	请定义一个由public修饰符修饰的int型成员变量MAX_LENGTH，并使该值保持为常数100，则定义这个变量的语句是（）
+
+A、publicintMAX_LENGTH=100
+
+B、publicconstintMAX_LENGTH=100
+
+C、finalintMAX_LENGTH=100
+
+D、publicfinalintMAX_LENGTH=100
+
+195．	下列是Random类的一些常用方法，其中能获得指定范围随机数的方法是（ ）
+
+A、nextInt()
+
+B、nextLong()
+
+C、nextBoolean()
+
+D、nextInt(intn)
+
+196．	下列关于静态变量的描述中，错误的是（ ）
+
+A、静态变量指的是被static修饰的变量
+
+B、静态变量是随着类的加载而加载
+
+C、静态变量可以被所有的实例对象共享
+
+D、静态变量同成员变量一样，都需要通过实例对象来调用
+
+197．	JComboBox中用于在指定的索引处插入选项的方法是（）
+
+A、ObjctgetItemAt(intindex)
+
+B、intgetItemCount()
+
+C、voidaddItem(ObjectanObject)
+
+D、voidinsertItemAt(ObjectanObject
+
+198．	以下选项中，哪个是FileInputStream的父类（ ）
+
+A、File
+
+B、FileOutput
+
+C、OutputStream
+
+D、InputStream
+
+199．	下面关于join()方法描述正确的是（ ）
+
+A、join()方法是用于线程休眠
+
+B、join()方法是用于线程启动
+
+C、join()方法是用于线程插队
+
+D、join()方法是用于线程同步
+
+200．	下面关于java.util.Random类中方法，说明错误的是（ ）
+
+A、nextDouble()方法返回的是0.0和1.0之间double类型的值
+
+B、nextFloat()方法返回的是0.0和1.0之间float类型的值
+
+C、nextInt(intn)返回的是0（包括）和指定值n（不包括）之间的值
+
+D、nextInt()返回的是0（包括）和2147483647之间的值
+
+201．	请阅读下面的程序
+
+class WhileDemo4 {
+
+public static void main(String args) {
+
+int n = 5;
+
+while (n > 10) {
+
+System.out.print(n);
+
+n++;
+
+}
+
+}
+
+}
+
+下列选项中，哪一个是程序运行的结果（ ）
+
+A、无输出
+
+B、输出56789
+
+C、死循环
+
+D、编译错误
+
+202．	FileWriter类中有很多重载的读取字符的方法，其中read()方法如果读取已到达流的末尾，将返回的值是（ ）
+
+A、0
+
+B、-1
+
+C、1
+
+D、无返回值
+
+203．	下列有关Java多线程中静态同步方法的说法错误的是（ ）
+
+A、静态方法必须使用class对象来同步
+
+B、在使用synchronized块来同步方法时，非静态方法可以通过this来同步，而静态方法必须使用class对象来同步
+
+C、静态同步方法和以当前类为同步监视器的同步代码块不能同时执行
+
+D、静态同步方法不可以和以this为同步监视器的同步代码块同时执行
+
+204．	线程的优先级用1-10之间的整数表示，默认的优先级是（ ）
+
+A、1
+
+B、10
+
+C、3
+
+D、5
+
+205．	下列关于throws关键字的说法中，错误的是（）
+
+A、throws关键字用于抛出异常
+
+B、可以使用throws关键字一次抛出多种类型的异常
+
+C、使用throws关键字抛出的异常，后续调用者在使用时无需处理
+
+D、使用throws关键字抛出异常后，程序可以编译通过
+
+206．	System类的getProperties()方法的作用是（）
+
+A、获取当前的操作系统的属性
+
+B、获取当前JVM的属性
+
+C、获取指定键指示的操作系统属性
+
+D、获取指定键指示的JVM的属性
+
+207．	下列File类的方法中，可以获得文件对象父路径名的是（ ）。
+
+A、getName()
+
+B、getParent()
+
+C、getPath()
+
+D、getAbsolutePath()
+
+208．	下列选项中，哪个类是所有异常类的父类？
+
+A、Throwable
+
+B、Error
+
+C、Exception
+
+D、AWTError
+
+209．	JAVA中调用Thread类的sleep()方法后，当前线程状态如何转换（ ）
+
+A、由运行状态进入阻塞状态
+
+B、由运行状态进入等待状态
+
+C、由阻塞状态进入等待状态
+
+D、由阻塞状态进入运行状态
+
+210．	下列选项中，哪一个不能通过编译（ ）
+
+A、byte a=1;
+
+B、short b=100;
+
+C、int c=1;
+
+D、long d=8888888888;
+
+211．	下列选项中，哪个类是用来读取文本的字符流？（ ）
+
+A、FileReader
+
+B、FileWriter
+
+C、FileInputStream
+
+D、FileOutputStream
+
+212．	下面选项中，哪个类不是Object的子类？（）
+
+A、String类
+
+B、System类
+
+C、Math类
+
+D、int
+
+213．	下列关于数据类型的说法中，错误的是（ ）
+
+A、布尔类型的值只有true和false
+
+B、字符类型的变量用于存储一个单一字符
+
+C、整型变量只能存储int类型的值
+
+D、浮点型变量用来存储小数数值
+
+214．	现有两个类A、B，以下描述中表示B继承自A的是（）
+
+A、class A extends B.class
+
+B、 class B implements A
+
+C、 class A implements B
+
+D、 class B extends A
+
+215．	下列关键字中，用于创建类的实例对象的是（ ）
+
+A、class
+
+B、new
+
+C、private
+
+D、void
+
+216．	下列关于类的说法中，错误的是（ ）
+
+A、Java中创建类的关键字是class。
+
+B、类中可以有属性与方法，属性用于描述对象的特征，方法用于描述对象的行为。
+
+C、Java中对象的创建，首先需要定义出一个类。
+
+D、一个类只能创建一个对象。
+
+217．	下列关于进程和线程的说法中，错误的是（ ）
+
+A、操作系统中每个独立执行的程序都可称之为一个进程
+
+B、操作系统中的每一个进程中都至少存在一个线程
+
+C、线程和进程一样，是由CPU轮流执行的
+
+D、线程和进程一样，是由CPU同时执行的
+
+218．	ActionEvent的对象会被传递给以下哪个事件处理器方法（）
+
+A、addChangeListener()
+
+B、addActionListener()
+
+C、stateChanged()
+
+D、actionPerformed()
+
+219．	下列关于Thread类中sleep()方法的描述，错误的是（ ）
+
+A、sleep()可以指定线程休眠的时间
+
+B、sleep()方法指定时间结束后，线程进入了运行状态
+
+C、sleep()是一个静态方法
+
+D、调用sleep()方法，线程进入阻塞状态
+
+220．	以下哪个类用于实现TCP通信的客户端程序（ ）
+
+A、ServerSocket
+
+B、Socket
+
+C、Client
+
+D、Server
+
+221．	JTextArea的构造方法中，用于创建显示指定初始文本并指定了行列的文本域的是（）
+
+A、JTextArea()
+
+B、JTextArea(Stringtext)
+
+C、JTextArea(introws
+
+D、intcolumns)
+
+222．	下面选项，关于CallableStatement接口的registerOutParameter( int parameterIndex, int sqlType)方法的作用，描述正确的是（ ）(单选)
+
+A、执行查询语句
+
+B、执行insert
+
+C、update
+
+D、delete语句的
+
+223．	下面选项中，完全面向对象的编程语言是（ ）
+
+A、C
+
+B、COBOL
+
+C、JAVA
+
+D、FORTRAN
+
+224．	下列选项中，不属于比较运算符的是（ ）
+
+A、=
+
+B、==
+
+C、<
+
+D、<=
+
+225．	File类中以字符串形式返回文件绝对路径的的方法是（ ）
+
+A、getName()
+
+B、getParent()
+
+C、getPath()
+
+D、getAbsolutePath()
+
+226．	下列选项中，使用了缓冲区技术的流是（ ）
+
+A、DataInputStream
+
+B、FileOutputStream
+
+C、BufferedInputStream
+
+D、FileReader
+
+227．	HTTP协议服务的默认端口号是（ ）
+
+A、8080
+
+B、8090
+
+C、空
+
+D、80
+
+228．	若二维数组int[][] arr={{1,2,3},{4,5,6},{7,8}};，则arr[1][2]的值是（ ）
+
+A、2
+
+B、5
+
+C、6
+
+D、0
+
+229．	下面IP地址格式中，错误的是（）
+
+A、1.1.1.1
+
+B、127.0.0.1
+
+C、192.168.1.360
+
+D、123.125.114.144
+
+230．	阅读下面的代码
+
+class Demo{
+
+ Demo(){}
+
+}
+
+下列构造方法中，哪个构造方法可以存在上述Demo类中？（ ）
+
+A、public Demo(){};
+
+B、private Demo(){};
+
+C、Demo(int age){};
+
+D、String name(){};
+
+231．	下列选项中，哪个是八进制043的十六进制表示形式（ ）
+
+A、0x43
+
+B、0x23
+
+C、23
+
+D、0x32
+
+232．	下面关于静态变量的描述，正确的是（ ）
+
+A、静态变量可以定义在类中的任意位置
+
+B、静态变量一但被赋值不能被修改
+
+C、静态变量可以被类直接调用，因此可以说静态变量的生命周期与实例无关
+
+D、以上都不对
+
+233．	下列选项中，不属于赋值运算符的是（ ）
+
+A、-=
+
+B、=
+
+C、==
+
+D、*=
+
+234．	当文件不存在或不可读时，使用FileInputStream读取文件会报下列哪一种错误（ ）
+
+A、NullPointerException
+
+B、NoSuchFieldException
+
+C、FileNotFoundException
+
+D、RuntimeException
+
+235．	处理鼠标事件时，通过（ ）方法将监听器绑定到事件源对象。
+
+A、mousePressed()
+
+B、addMouseListener()
+
+C、mouseEntered()
+
+D、mouseClicked()
+
+236．	声明一个数组，【】 a = new String[]{};空格处应该填写的内容是（）
+
+A、int
+
+B、double
+
+C、String[]
+
+D、String
+
+237．	表达式3510/1000的运算结果为（ ）
+
+A、3
+
+B、3.51
+
+C、3.510
+
+D、4
+
+238．	阅读下面程序片段
+
+switch (i) {
+
+case 1:
+
+System.out.println("message1");
+
+case 2:
+
+System.out.println("message2");
+
+case 3:
+
+System.out.println("message3");
+
+break;
+
+}
+
+请说当变量i的值为多少时，程序只输出“message 3”。 （）
+
+A、1
+
+B、2
+
+C、3
+
+D、4
+
+239．	下列关于同步代码块的特征说法错误的是（ ）
+
+A、可以解决多线程的安全问题
+
+B、降低程序的性能
+
+C、使用synchronized关键字修饰
+
+D、多线程同步的锁只能是object对象
+
+240．	下列关于线程的说法中，错误的是（ ）
+
+A、线程就是程序
+
+B、线程是一个程序的单个执行流
+
+C、多线程用于实现线程并发程序
+
+D、多线程是指一个程序的多个执行流
+
+241．	MouseEvent类中表示鼠标左击事件的常量是（ ）
+
+A、BUTTON2
+
+B、BUTTON3
+
+C、BUTTON4
+
+D、BUTTON1
+
+242．	一个具体类实现接口时，需要重写接口中的（）
+
+A、默认方法
+
+B、局部变量
+
+C、抽象方法
+
+D、类方法
+
+243．	下面Statement接口的方法中，用于执行insert、update和delete语句的是（ ）(单选)
+
+A、executeUpdate(Stringsql)
+
+B、executeQuery(Stringsql)
+
+C、execute(Stringsql)
+
+D、executeDelete(Stringsql)
+
+244．	下面选项中，哪一个不是Java中的关键字（ ）
+
+A、sizeof
+
+B、const
+
+C、public
+
+D、goto
+
+245．	下列选项中，哪个不能被final修饰（ ）
+
+A、类
+
+B、接口
+
+C、方法
+
+D、变量
+
+246．	下列选项中，关于包装类描述错误的是（）
+
+A、包装类的作用之一就是将基本类型包装成引用类型
+
+B、包装类它可以完成在基本类型与String类型之间的转换
+
+C、包装类一共有八个，对应的基本数据类型
+
+D、我们可以继承包装类，以完成自定义包装
+
+247．	下列选项中，哪个是TCP协议的“三次握手”中的第一次握手（ ）
+
+A、客户端再次向服务器端发送确认信息，确认连接。
+
+B、服务器端向客户端回送一个响应，通知客户端收到了连接请求。
+
+C、客户端向服务器端发出连接请求，等待服务器确认。
+
+D、以上选项都不对
+
+248．	下列关于this关键字的说法中，错误的是（ ）
+
+A、this可以解决成员变量与局部变量重名问题
+
+B、this出现在成员方法中，代表的是调用这个方法的对象
+
+C、this可以出现在任何方法中
+
+D、this相当于一个引用，可以通过它调用成员方法与属性
+
+249．	下面关于 Math.random()方法生成的随机数，正确的是哪项（ ）
+
+A、0.8652963898062596
+
+B、-0.2
+
+C、3.0
+
+D、1.2
+
+250．	下列关于成员变量默认值的描述中，错误的是（ ）
+
+A、byte类型的数据默认值是0
+
+B、int类型的数据默认值是0
+
+C、long类型的数据默认值是0
+
+D、float类型的数据默认值是0.0f
+
+251．	下列关于IO流的说法中，错误的（）
+
+A、InputStream读文件时操作的都是字节
+
+B、Reader是字符输入流
+
+C、FileReader和FileWriter用于读写文件的字节流
+
+D、BufferedReader和BufferedWriter是具有缓冲功能的字符流。
+
+252．	关于Thread类yield()方法的作用，下列描述中正确的是（ ）
+
+A、使线程由运行状态进入阻塞状态
+
+B、使线程由运行状态进入就绪状态
+
+C、使线程由阻塞状态进入等待状态
+
+D、使线程由阻塞状态进入运行状态
+
+253．	下列关于面向对象的说法中，错误的是（ ）
+
+A、面向对象思想编程，不仅增强代码了复用性，提供了开发效率，而且为程序的修改补充提供了便利。
+
+B、面向对象就是分析解决问题所需要的步骤，然后用函数把这些步骤一一实现，使用的时候一个一个依次调用。
+
+C、面向对象是把解决的问题按照一定规则划分为多个独立的对象，然后通过调用对象的方法来解决问题。
+
+D、面向对象虽然使程序的开发效率提高了，但是程序的处理效率相对面向过程程序要低。
+
+254．	下面关于Statement接口中，用于执行SQL中的select语句的方法是（ ）(单选)
+
+A、executeUpdate(Stringsql)
+
+B、executeQuery(Stringsql)
+
+C、execute(Stringsql)
+
+D、executeDelete(Stringsql)
+
+255．	关于表达式1234/1000 * 1000的运算结果，下列哪个选项是正确的（ ）
+
+A、1234
+
+B、1000
+
+C、1234.0
+
+D、以上都不对
+
+256．	下面关于整数类型的描述中，错误的是（ ）
+
+A、byte是java中的整数类型，它的取值范围是-127到128。
+
+B、java中的整数有正负之分。
+
+C、bit是java中的整数类型，它代表的是1个字节。
+
+D、int是java中的整数类型，它在内存中占4个字节。
+
+257．	下列说法中，错误的是（ ）
+
+A、UDP在数据传输时，数据的发送端和接收端不建立逻辑连接
+
+B、TCP协议是面向连接的通信协议
+
+C、使用UDP协议传送数据保证了数据的完整性
+
+D、TCP连接中必须要明确客户端与服务器端，由客户端向服务端发出连接请求
+
+258．	下列关于super关键字的说法中，正确的是（ ）
+
+A、super关键字是在子类对象内部指代其父类对象的引用
+
+B、super关键字不仅可以指代子类的直接父类，还可以指代父类的父类
+
+C、子类通过super关键字只能调用父类的方法，而不能调用父类的属性
+
+D、子类通过super关键字只能调用父类的属性，而不能调用父类的方法
+
+259．	下列有关线程的创建方式说法错误的是（ ）
+
+A、通过继承Thread类与实现Runnable接口都可以创建多线程程序
+
+B、实现Runnable接口相对于继承Thread类来说，可以避免由于Java的单继承带来的局限性
+
+C、通过继承Thread类与实现Runnable接口创建多线程这两种方式没有区别
+
+D、大部分的多线程应用都会采用实现Runnable接口方式创建
+
+260．	关于final修饰成员变量说法正确的是（）
+
+A、被final修饰的成员变量为常量
+
+B、被final修饰的成员变量不能被继承
+
+C、被final修饰的成员变量可以被多次赋值
+
+D、final只能在接口中修饰成员变量
+
+261．	下列关于Socket类的描述中，错误的是（ ）
+
+A、Socket类中定义的getInputStream()方法用于返回Socket的输入流对象。
+
+B、Socket类中定义的getOutputStream()方法用于返回Socket的输出流对象。
+
+C、Socket类中定义的getLocalAddress()方法用于获取Socket对象绑定的本地IP地址。
+
+D、Socket类中定义的close()方法用于关闭输入\\输出流对象。
+
+262．	下列选项中，哪一个是十进制数6的二进制值（ ）
+
+A、111
+
+B、101
+
+C、110
+
+D、011
+
+263．	下面关于this关键字的描述中，错误的是（）
+
+A、如果类的成员变量与方法中的局部变量名相同，那么可以在方法中通过this关键字调用成员变量
+
+B、只能在构造方法中使用this调用其他的构造方法
+
+C、在构造方法中使用this调用构造方法的语句必须是该方法的第一条执行语句，且只能出现一次
+
+D、可以在一个类的两个构造方法中使用this互相调用
+
+264．	下列关于classpath环境变量的说法中，哪一个是正确的（ ）
+
+A、classpath配置一次后可永久使用
+
+B、没有classpath环境变量就不能运行Java程序
+
+C、classpath环境变量可以让虚拟机找到class文件的目录
+
+D、查看当前classpath配置的命令是:classpath
+
+265．	下列选项中，用于引入包的关键字是（ ）
+
+A、class
+
+B、import
+
+C、package
+
+D、static
+
+266．	阅读下面的代码：
+
+class Person{
+
+void  say(){
+
+System.out.println("hello");
+
+}
+
+}
+
+class Example{
+
+public static void main(String[] args){
+
+Person p1 = new Person();
+
+Person p2 = new Person();
+
+p2.say();
+
+p1.say();
+
+p2=null;
+
+p2.say();
+
+}
+
+}
+
+下列选项中，哪个是程序的输出结果？（）
+
+A、hello
+
+B、hellohello
+
+C、hellohellohello
+
+D、抛出异常
+
+267．	下面关于重载的描述，错误的是（）
+
+A、构造方法不能重载
+
+B、重载要求方法名相同，参数列表不同
+
+C、方法重载发生在一个类的内部
+
+D、方法的返回值类型不是区分方法重载的条件
+
+268．	下面选项中，用于返回表示数据库元数据的方法是（ ）(单选)
+
+A、getMetaData()
+
+B、getConnection(Stringurl
+
+C、Stringuser
+
+D、Stringpwd)
+
+269．	JDBC API主要位于下列选项的那个包中（）(单选)
+
+A、java.sql.*
+
+B、java.util.*
+
+C、javax.lang.*
+
+D、java.text.*
+
+270．	下面关于this关键字的描述中，错误的是（）
+
+A、如果类的成员变量与方法中的局部变量名相同，那么可以在方法中通过this关键字调用成员变量
+
+B、只能在构造方法中使用this调用其他的构造方法
+
+C、在构造方法中使用this调用构造方法的语句必须是该方法的第一条执行语句，且只能出现一次
+
+D、可以在一个类的两个构造方法中使用this互相调用
+
+271．	下面代码中，哪一项是正确定义了一个3*4的二维数组（ ）
+
+A、int[][]arr=newint[3][4]
+
+B、int[][]arr=newint[3][]
+
+C、int[][]arr=newint[][4]
+
+D、int[][]arr={{1,2},{3,4,5},{6}}
+
+272．	在UDP协议通信时，用于发送数据包的类是（ ）
+
+A、DatagramPacket
+
+B、ServerSocket
+
+C、Socket
+
+D、DatagramSocket
+
+273．	JComboBox中的 Object getSelectedItem()方法可以用于（）
+
+A、删除组合框中所有的选项
+
+B、返回组合框中选项的数目
+
+C、返回当前所选项
+
+D、返回指定索引处选项，第一个选项的索引为0
+
+274．	下面对于final的描述中，错误的是（）
+
+A、final修饰的局部变量可以被重新赋值
+
+B、final修饰的变量被称之为常量
+
+C、final修饰的基本数据类型变量
+
+D、不能改变其值
+
+275．	下列关于线程优先级的描述，错误的是（ ）
+
+A、NORM_PRIORITY代表普通优先级，默认值是5
+
+B、一般情况下，主函数具有普通优先级
+
+C、新建线程的优先级默认为最低
+
+D、优先级高的线程获得先执行权的几率越大
+
+276．	下列关于自定义异常的说法中，错误的是（ ）
+
+A、自定义异常要继承Exception类
+
+B、自定义异常继承Exception类后，具有可抛性
+
+C、自定义异常可以在构造方法中用super关键字传递异常信息给父类
+
+D、自定义异常必须继承Error类
+
+277．	下面命令中，可以用来正确执行HelloWorld案例的是（ ）
+
+A、javaHelloWorld
+
+B、javaHelloWorld.java
+
+C、javacHelloWorld
+
+D、javacHelloWorld.java
+
+278．	100属于下列哪种类型的常量（ ）
+
+A、布尔类型
+
+B、字符类型
+
+C、整数类型
+
+D、浮点类型
+
+279．	下面关于yield方法描述正确的是（ ）
+
+A、yield方法是用于合并线程
+
+B、yield方法是用于启动线程
+
+C、yield方法是用于线程让步
+
+D、yield方法是用于线程同步
+
+280．	下列常量中，属于整型常量的是（ ）
+
+A、198
+
+B、2e3f
+
+C、true
+
+D、null
+
+281．	Statement接口中executeQuery()方法的返回值是（ ）(单选)
+
+A、ResultSet
+
+B、int
+
+C、Boolean
+
+D、Result
+
+282．	下面关于executeQuery(String sql)方法，说法正确的是（ ）(单选)
+
+A、可以执行insert语句
+
+B、可以执行update语句
+
+C、可以执行select语句
+
+D、可以执行delete语句
+
+283．	假设x为int类型，那么下列选项中可以作为if语句的判断条件的是（ ）
+
+A、x=4
+
+B、x&3
+
+C、x++
+
+D、x<10
+
+284．	下列关于多线程中的静态同步方法说法中，正确的是（ ）
+
+A、静态同步方法的锁不是this，而是该方法所在类的class对象
+
+B、静态同步方法的锁既可以是this，也可以是该方法所在类的class对象
+
+C、一个类中的多个静态同步方法可以同时被多个线程执行
+
+D、不同类的静态同步方法被多线程访问时，线程间需要等待
+
+285．	下面哪种类型的文件可以在Java虚拟机中运行（）
+
+A、.java
+
+B、.jre
+
+C、.exe
+
+D、.class
+
+286．	为了能让外界访问私有属性，需要提供一些使用（ ）关键字修饰的公有方法。
+
+A、void
+
+B、default
+
+C、private
+
+D、public
+
+287．	final修饰符修饰方法时，不能和以下哪个修饰符共用（）
+
+A、public
+
+B、static
+
+C、abstract
+
+D、synchronized
+
+288．	下列选项中，关于流式布局管理器（FlowLayout）的说法错误的是（ ）
+
+A、在流式布局下，当到达容器的边界时，会自动将组件放到下一行的开始位置
+
+B、FlowLayout布局管理器的特点就是可以将所有组件像流水一样依次进行排列
+
+C、流式布局管理器是最简单的布局管理器
+
+D、流式布局管理器将容器划分为五个区域
+
+289．	下面选项，关于ResultSet中游标指向的描述正确的是（ ）(单选)
+
+A、ResultSet对象初始化时，游标在表格的第一行
+
+B、ResultSet对象初始化时，游标在表格的第一行之前
+
+C、ResultSet对象初始化时，游标在表格的最后一行之前
+
+D、ResultSet对象初始化时，游标在表格的最后一行
+
+290．	以下哪个不属于Path接口的常用方法（）
+
+A、boolean endsWith(String other)
+
+B、Path getParent()
+
+C、Path get(URI uri)
+
+D、URI toUri()
+
+291．	以下关于三元运算符的说法中，正确的是（）
+
+A、三元运算符第一个表达式的结果必须是boolean类型值。
+
+B、三元运算符第一个表达式的结果可以是任意类型的值。
+
+C、三元运算符只能得到基本类型的结果。
+
+D、以上说法都不对。
+
+292．	关于NIO中的Channel描述，错误的是（）
+
+A、Channel可以异步的执行I/O读写操作。
+
+B、Channel的读写操作是双向的，既可以从Channel中读取数据，又可以写数据到Channel
+
+C、Channel可以直接将指定文件的部分或者全部直接映射成Buffer
+
+D、程序可以直接读写Channel中的数据
+
+293．	下面关于Java程序的描述中，错误的是（ ）
+
+A、Java程序运行时，必须经过编译和运行两个步骤。
+
+B、.java格式的源文件是用来编译的
+
+C、.class格式的文件是用来运行的
+
+D、不同操作系统上的Java虚拟机是相同的
+
+294．	下列选项中，不属于运行时异常类子类的是（ ）
+
+A、ArrayStoreException
+
+B、ClassCastException
+
+C、IllegalArgumentException
+
+D、ThreadDeath
+
+295．	阅读下列的程序
+
+class Person{
+
+static{
+
+System.out.println("static");
+
+}
+
+Person(){
+
+System.out.println("构造");
+
+}
+
+}
+
+class Demo{
+
+public static void main(String[] args){
+
+Person p = new Person();
+
+}
+
+}
+
+下列选项中，程序的运行结果是（）
+
+A、构造
+
+B、static构造
+
+C、static
+
+D、没有输出结果
+
+296．	如果父类的方法是静态的，则子类的方法被（）修饰才能覆盖父类的静态方法 。
+
+A、protected
+
+B、static
+
+C、private
+
+D、final
+
+297．	请阅读下面的代码 boolean a = false; boolean b = true; boolean c= ( a&amp;&amp;b)&amp;&amp;(!b); int result = (c = = false)?1:2; 当语句执行完，变量c与result的值为（ ）
+
+A、false和1
+
+B、true和2
+
+C、true和1
+
+D、false和2
+
+298．	下列异常中，属于编译时异常的是（ ）
+
+A、NumberFormatException
+
+B、ArithmeticException
+
+C、IOException
+
+D、RuntimeException
+
+299．	下列选项中，不属于InputStreamReader类的方法的是（ ）
+
+A、getEncoding()
+
+B、close()
+
+C、read()
+
+D、flush()
+
+300．	下面选项中，哪一个是合法的标识符（ ）
+
+A、while
+
+B、1Demo
+
+C、_3_
+
+D、class
+
+301．	下面关于JDBC驱动器API与JDBC驱动器关系的描述，正确的是（ ）(单选)
+
+A、JDBC驱动器API是接口，而JDBC驱动器是实现类
+
+B、JDBC驱动器API内部包含了JDBC驱动器
+
+C、JDBC驱动器内部包含了JDBC驱动器API
+
+D、JDBC驱动器是接口，而JDBC驱动器API是实现类
+
+302．	分析下面程序,哪一行代码能正确赋值（）
+
+class Demo {
+
+public void method() {
+
+final int num1 = 10;
+
+static int num2 = 20;
+
+abstract int num3 = 30;
+
+private int num4 = 40;
+
+}
+
+}
+
+A、final int num1 = 10;
+
+B、static int num2 = 20;
+
+C、abstract int num3 = 30;
+
+D、private int num4 = 40;
+
+303．	下列选项中，用于将发送数据进行打包的类是（ ）
+
+A、Socket
+
+B、DatagramSocket
+
+C、DatagramPacket
+
+D、ServerSocket
+
+304．	FileWriter类的write(int c)方法的作用是（ ）
+
+A、写出单个字符
+
+B、写入多个
+
+C、写入一个整形数据
+
+D、写入单个字符
+
+305．	下列选项中，哪个流使用了缓冲区技术？（ ）
+
+A、BufferedOutputStream
+
+B、FileInputStream
+
+C、DataOutputStream
+
+D、FileReader
+
+306．	下列选项中，能够实现预编译的是（）(单选)
+
+A、Statement
+
+B、Connection
+
+C、PreparedStatement
+
+D、DriverManager
+
+307．	下面程序的运行结果是（ ）
+
+public class Demo {
+
+public static void main(String[] args) {
+
+try {
+
+System.out.println(10 / 0);
+
+} catch (RuntimeException e) {
+
+System.out.println("RuntimeException");
+
+} catch (ArithmeticException e) {
+
+System.out.println("ArithmeticException");
+
+}
+
+}
+
+}
+
+A、编译失败
+
+B、编译通过，没有结果输出
+
+C、输出：RuntimeException
+
+D、输出：ArithmeticException
+
+308．	下列程序的运行结果是
+
+class Demo{
+
+private String name;
+
+ Demo(String name){this.name = name;}
+
+private static void show(){
+
+System.out.println(name)
+
+}
+
+public static void main(String[] args){
+
+ Demo d = new Demo(“lisa”);
+
+d.show();
+
+}
+
+}
+
+A、输出lisa
+
+B、输出null
+
+C、输出name
+
+D、编译失败，无法从静态上下文中引用非静态变量name
+
+309．	下列选项中，不属于逻辑运算符的是（）
+
+A、!
+
+B、&&
+
+C、||
+
+D、~
+
+310．	以下操作数据库结束后关闭资源顺序合理的是（）
+
+A、ResultSet>Statement（或PreparedStatement）->Connection
+
+B、Connection>Statement（或PreparedStatement）->ResultSet
+
+C、Statement（或PreparedStatement）>ResultSet->Connection
+
+D、以上都错误
+
+311．	以下关于类的描述中，错误的是（ ）
+
+A、在面向对象的思想中最核心就是对象，为了在程序中创建对象，首先需要定义一个类
+
+B、定义类的关键字是Interface
+
+C、类中的方法叫成员方法，成员方法又分为实例方法与类方法
+
+D、类中的属性叫成员属性，成员属性又分为实例属性与类属性
+
+312．	下列有关数组中元素位置交换的描述，错误的是（ ）
+
+A、位置交换的过程中需要借助一个中间变量
+
+B、位置交换的过程至少需要三步
+
+C、位置交换后数组的角标顺序发生了改变
+
+D、位置交换后数组的角标顺序不会发生改变
+
+313．	表达式7%（-3）的运算结果为（ ）
+
+A、-2
+
+B、-1
+
+C、2
+
+D、1
+
+314．	以下选项中，哪个是File类中isFile()方法返回值的类型（）
+
+A、int
+
+B、boolean
+
+C、Integer
+
+D、String
+
+315．	下列选项中，正确关闭数据库资源的顺序是（）
+
+A、resultSet.close()
+
+B、atement.close()
+
+C、nnection.close()
+
+D、statement.close()
+
+316．	在TCP/IP 网络中，为各种公共服务和系统保留的端口号范围是（ ）
+
+A、0~65525
+
+B、0~1024
+
+C、0~1023
+
+D、0~80
+
+317．	JMenu中用于返回指定索引处的菜单项，第一个菜单项的索引为0的方法是（）
+
+A、intgetItemCount()
+
+B、voidJMenuIteminsert(JMenuItemmenuItem
+
+C、intpos)
+
+D、voidaddSeparator()
+
+318．	下列选项中，可以被final修饰符修饰的是（）
+
+A、抽象方法
+
+B、局部变量
+
+C、接口
+
+D、抽象类
+
+319．	下列关键字中，哪个不能修饰接口中的成员变量？（）
+
+A、public
+
+B、static
+
+C、final
+
+D、private
+
+320．	int[] a ={45,4,67,23,65,87,34,52,56}；数组中a[5]的值为（ ）
+
+A、23
+
+B、45
+
+C、65
+
+D、87
+
+321．	下列选项中，哪个是程序正确的输出结果？（）
+
+class StringDemo{
+
+public static void main(String[] args){
+
+String s1 = “a”;
+
+String s2 = “b”;
+
+show(s1,s2);
+
+System.out.println(s1+s2);
+
+}
+
+public static void show(String s1,String s2){
+
+s1 = s1 +”q”;
+
+s2 = s2 + s1;
+
+}
+
+}
+
+A、ab
+
+B、aqb
+
+C、aqbaq
+
+D、aqaqb
+
+322．	下列选项中，关于BorderLayout边界布局管理器的说法错误的是（ ）
+
+A、向BorderLayout布局管理器的容器中添加组件时需要使用add(Componentcomp
+
+B、Objectconstraints)方法
+
+C、add(Componentcomp
+
+D、Objectconstraints)方法参数constraints是String类型的
+
+323．	以下关于File类的isDirectory ()方法的描述，哪个是正确的（ ）
+
+A、判断该File对象所对应的是否是文件。
+
+B、判断该File对象所对应的是否是目录。
+
+C、返回文件的最后修改时间。
+
+D、在当前目录下生成指定的目录。
+
+324．	下列关于类与对象的说法中，错误的是（ ）
+
+A、类是对某一类事物的抽象描述，而对象则是该类事物的个体。
+
+B、对象是类的实例化。
+
+C、类用于描述多个对象的共同特征，它是对象的模板。
+
+D、类与对象没有什么实际关系。
+
+325．	下列选项中，哪一个是十进制数16的八进制值（ ）
+
+A、1110
+
+B、020
+
+C、10000
+
+D、0110
+
+326．	请阅读下面的程序
+
+public class Example {
+
+public static void main(String args) {
+
+int x = 1;
+
+do {
+
+x++;
+
+} while (x <= 4);
+
+System.out.println("x = " + x);
+
+}
+
+}
+
+程序的运行结果是（）
+
+A、3
+
+B、4
+
+C、5
+
+D、6
+
+327．	以下关于变量的定义，正确的是 （ ）
+
+A、int a=10;
+
+B、b=2;
+
+C、int=20;
+
+D、int a;b=a+10;
+
+328．	静态方法运行时，在哪个内存区域中（ ）
+
+A、栈内存
+
+B、堆内存
+
+C、方法区
+
+D、寄存器
+
+329．	以下写法中可以正确定义一个同步代码块的是（ ）
+
+A、synchronized(常量){}
+
+B、synchronized(对象){}
+
+C、synchronized(){}
+
+D、synchronized(任意基本数据类型){}
+
+330．	下面关于字节流缓冲区的说法错误的是（ ）
+
+A、使用字节流缓冲区读写文件是一个字节一个字节的读写。
+
+B、使用字节流缓冲区读写文件时，可以一次性读取多个字节的数据。
+
+C、使用字节流缓冲区读写文件，可以大大的提高文件的读写操作。
+
+D、字节流缓冲区就是一块内存，用于存放暂时输入输出的数据。
+
+331．	下列转义字符中，不合法的是（ ）
+
+A、'\\n'
+
+B、'\\x'
+
+C、'\\r'
+
+D、'\\t'
+
+332．	下列选项中，哪个关键字可以修饰方法内的局部变量？（）
+
+A、abstract
+
+B、final
+
+C、static
+
+D、private
+
+333．	下面哪个关键字用于将类中的属性私有化（ ）
+
+A、default
+
+B、public
+
+C、private
+
+D、protected
+
+334．	下面关于配置path环境变量作用的说法中，正确的是（ ）
+
+A、在任意目录可以使用javac和java命令
+
+B、在任意目录下可以使用class文件
+
+C、在任意目录可以使用记事本
+
+D、在任意目录下可以使用扫雷游戏
+
+335．	下面选项中，能将游标移动到结果集最后一行的方法是（ ）(单选)
+
+A、next()
+
+B、absolute(introw)
+
+C、previous()
+
+D、last()
+
+336．	下列关于类和对象的说法中，错误的是（）
+
+A、类用于描述多个对象的共同特征，它是对象的模板
+
+B、类在Java中是一个可有可无的概念
+
+C、对象是类的具体化，一个类可以对应多个对象
+
+D、类是对事物的抽象描述，对象则是该类事物的个体
+
+337．	下列关于继承的描述中，错误的是（）
+
+A、在Java中，类只支持单继承，不允许多重继承，也就是说一个类只能有一个直接父类
+
+B、多个类可以继承一个父类
+
+C、在Java中，多层继承是可以的，即一个类的父类可以再去继承另外的父类，例如C类继承自B类，而B类又可以去继承A类，这时，C类也可称作A类的子类
+
+D、Java是支持多继承的
+
+338．	下面Statement接口的方法中，用于执行各种SQL语句的是（ ）(单选)
+
+A、executeUpdate(Stringsql)
+
+B、executeQuery(Stringsql)
+
+C、execute(Stringsql)
+
+D、executeDelete(Stringsql)
+
+339．	在JDialog类的构造方法中，用于创建一个具有指定标题的非模态对话框的是（ ）
+
+A、JDialog(Frameowner)
+
+B、JDialog(Frameowner，Stringtitle)
+
+C、JDialog(Frameowner，booleanmodal)
+
+D、以上都可以
+
+340．	while语句的循环体中不能包含的语句是（　　）
+
+A、while语句
+
+B、方法定义语句
+
+C、if语句
+
+D、switch语句
+
+341．	下列关于Java语言的描述中，错误的是（）
+
+A、Java语言是一门面向对象的编程语言
+
+B、Java是一门与平台无关的编程语言
+
+C、Java具有JavaSE、JavaME和JavaEE三大平台
+
+D、Java是一门介于汇编和高级之间的语言
+
+342．	下列选项中，关于 GridLayout（网格布局管理器）的说法错误的是（ ）
+
+A、GridLayout布局管理器可以设置组件的大小
+
+B、放置在GridLayout布局管理器中的组件将自动占据网格的整个区域
+
+C、GridLayout布局管理器中，组件的相对位置不随区域的缩放而改变，但组件的大小会随之改变，组件始终占据网格的整个区域
+
+D、GridLayout布局管理器缺点是总是忽略组件的最佳大小，所有组件的宽高都相同
+
+343．	下列选项中，对Math.random()方法描述正确的是( )
+
+A、返回一个不确定的整数
+
+B、返回0或是1
+
+C、返回一个随机的double类型数，该数大于等于0.0小于1.0
+
+D、返回一个随机的int类型数，该数大于等于0.0小于1.0
+
+344．	关于线程的死锁，下面的说法正确的是（ ）
+
+A、若程序中存在线程的死锁问题，编译时不能通过
+
+B、线程的死锁是一种逻辑运行错误，编译器无法检测
+
+C、实现多线程时死锁不可避免
+
+D、为了避免死锁，应解除对资源以互斥的方式进行访问
+
+345．	下列选项中，不可以被final修饰的是（ ）
+
+A、接口
+
+B、类
+
+C、方法
+
+D、变量
+
+346．	在try{}catch(【】e){}中括号处需要填写的是？（ ）
+
+A、异常对象
+
+B、异常类
+
+C、任意对象
+
+D、任意类
+
+347．	下列选项中，不属于Java中关键字的是（ ）
+
+A、const
+
+B、 false
+
+C、 Final
+
+D、 try
+
+348．	如果类的成员被（ ）访问控制符来修饰，则这个成员只能被该类的其它成员访问，其它类无法直接访问。
+
+A、private
+
+B、default
+
+C、protected
+
+D、public
+
+349．	若int[][] arr= {{1,2,3}}，则arr[0][1]的结果为（ ）
+
+A、0
+
+B、1
+
+C、2
+
+D、3
+
+350．	下列选项中，哪个关键字用来抛出异常？（）
+
+
+A、try
+
+B、catch
+
+C、throw
+
+D、finally
+
+351．	下列有关Java变量相关的描述，错误的是（）。
+
+A、定义变量的语法非常简单，只需要指定变量的类型和变量名
+
+B、变量类型决定了变量的数据性质、范围、存储在内存中所占的字节数以及可以进行的合法操作
+
+C、变量名必须是一个关键字
+
+D、在定义变量的同时，可以对该变量进行初始化赋值
+
+352．	当成员变量和局部变量重名时，若想在方法内使用成员变量，那么需要使用下列选项中的哪一个关键字（ ）
+
+A、super
+
+B、import
+
+C、this
+
+D、return
+
+353．	下列选项中，用于表示动作事件的类是？（）
+
+A、KeyListener
+
+B、KeyEvent
+
+C、ActionEvent
+
+D、MenuKeyEvent
+
+
+
+
+ 
+
+
+
+
